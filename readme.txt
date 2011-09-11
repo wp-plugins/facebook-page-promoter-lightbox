@@ -30,7 +30,7 @@ Navigate to the wp-settings tab and set your preferences.
 
 **Q. How to obtain my Facebook FanPage ID?:**
 
-A. <a href=\"http://socialmediaseo.net/2010/02/20/how-to-find-facebook-id/\">*http://socialmediaseo.net/2010/02/20/how-to-find-facebook-id/*</a> * (no associated site) has good instruction on how to get the fanpage id
+A. <a href=\"http://rieglerova.net/how-to-get-a-facebook-fan-page-id/\">*http://rieglerova.net/how-to-get-a-facebook-fan-page-id/*</a> * (no associated site) has good instruction on how to get the fanpage id
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action
 
