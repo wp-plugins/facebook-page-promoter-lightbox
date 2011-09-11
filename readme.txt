@@ -1,9 +1,9 @@
-﻿=== Facebook Page Promoter Lightbox ===
+=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
 Tags: facebook,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: trunk
+Stable tag: 1.0
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
@@ -25,7 +25,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Navigate to the wp-settings tab and set your preferences.
 
-***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin ino rder to avoid conflict*
+***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==
 
 **Q. How to obtain my Facebook FanPage ID?:**
