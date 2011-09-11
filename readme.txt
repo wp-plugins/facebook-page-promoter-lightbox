@@ -1,6 +1,6 @@
 ﻿=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
-Tags: facebook,lightbox,fancybox,social media,seo
+Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
 Stable tag: 1.0
