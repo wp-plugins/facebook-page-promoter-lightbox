@@ -3,7 +3,7 @@ Contributors: Arevico
 Tags: facebook,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: trunk
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
