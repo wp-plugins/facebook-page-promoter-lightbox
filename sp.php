@@ -18,12 +18,12 @@ function lb_appender($content){
 			</script><script>FB.init();</script><a id="inline" href="#data" style="display: none;">Show</a><div style="display:none">
 			<div id="data" style=""><fb:fan profile_id="' . $options['fb_id'] .  '" connections="6" width="400" height="180" frameborder="none"></fb:fan></div></div>';
 	$lr .= js_localize("lb_l_ret",$options);
-	$lr .= genScript(array('fancybox/launch.js'));
+	$lr .= genScript(array('scs/launch.js'));
 
 	if (!$options['fancybox']) {
-		$content .= genScript(array('fancybox/jquery.fancybox-1.3.4.js'));
+		$content .= genScript(array('scs/jquery.fancybox-1.3.4.js'));
 	}
-		$content .= genStyle(array('fancybox/jquery.fancybox-1.3.4.css')) . $lr;
+		$content .= genStyle(array('scs/jquery.fancybox-1.3.4.css')) . $lr;
 
 	}
 	/* Remove shorttags*/
