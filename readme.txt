@@ -1,4 +1,4 @@
-﻿=== Facebook Page Promoter Lightbox ===
+=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
 Tags: facebook,lightbox,fancybox,social media,seo
 Requires at least: 2.8
@@ -25,7 +25,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Navigate to the wp-settings tab and set your preferences.
 
-***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin ino rder to avoid conflict*
+***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==
 
 **Q. How to obtain my Facebook FanPage ID?:**

@@ -21,9 +21,9 @@ function lb_appender($content){
 	$lr .= genScript(array('scs/launch.js'));
 
 	if (!$options['fancybox']) {
-		$content .= genScript(array('scs/jquery.fancybox-1.3.4.js'));
+		$content .= genScript(array('scs/scs.js'));
 	}
-		$content .= genStyle(array('scs/jquery.fancybox-1.3.4.css')) . $lr;
+		$content .= genStyle(array('scs/scs.css')) . $lr;
 
 	}
 	/* Remove shorttags*/
@@ -38,7 +38,7 @@ function lb_appender($content){
 function my_jq_apper() {
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js');
-	wp_enqueue_script( 'jquery' );
+	wp_enqueue_	ript( 'jquery' );
 }
 
 add_filter('the_content', 'lb_appender');
