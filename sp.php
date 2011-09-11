@@ -38,7 +38,7 @@ function lb_appender($content){
 function my_jq_apper() {
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js');
-	wp_enqueue_	ript( 'jquery' );
+	wp_enqueue_script( 'jquery' );
 }
 
 add_filter('the_content', 'lb_appender');
