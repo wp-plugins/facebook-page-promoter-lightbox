@@ -1,4 +1,4 @@
-=== Facebook Page Promoter Lightbox ===
+﻿=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
 Tags: facebook,lightbox,fancybox,social media,seo
 Requires at least: 2.8
