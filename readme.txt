@@ -1,4 +1,4 @@
-=== Facebook Page Promoter Lightbox ===
+﻿=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
 Tags: facebook,lightbox,fancybox,social media,seo
 Requires at least: 2.8
@@ -17,7 +17,7 @@ All your visitors should know about your facebook page and tell their frienda. W
 *   Limit the lightbox to once every $x days for individual visitors
 *   Promote your own facebook fan page
 *   No api key needed at time of writing
-*   Facebook page is needed
+*   Facebook page is needed 
 
 == Installation ==
 
