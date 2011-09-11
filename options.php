@@ -56,7 +56,7 @@ function arv_fbx_options_do_page() {
 			<?php $options = defaulter(get_option('arv_fbx'));?>
 
 			<table class="form-table">
-				<tr valign="top"><th scope="row">Facebook Page ID (How?):</th>
+				<tr valign="top"><th scope="row">Facebook Fan Page Numeric ID:</th>
 					<td><input type="text" name="arv_fbx[fb_id]" value="<?php echo $options['fb_id']; ?>" /></td>
 					</td>
 				</tr>
