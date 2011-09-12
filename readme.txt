@@ -1,5 +1,6 @@
 ﻿=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=frisokluitenberg%40hotmail%2ecom&lc=EC&item_name=Arevico%20Software&no_note=1&no_shipping=1&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
