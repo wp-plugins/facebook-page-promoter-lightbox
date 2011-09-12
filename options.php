@@ -15,7 +15,7 @@ function arv_fbx_options_add_page() {
 }
 // This function sets default options for an array
 function defaulter($arr_opt,$reset=false){
-	$defs = array('fancybox'=>'0','fb_id' => '10376464573','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','exc' => '[exclude]');
+	$defs = array('fancybox'=>'0','fb_id' => '287663154583826','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','exc' => '[exclude]');
 	$checkboxes = array("display_on_post","display_on_page","fancybox");
 
 	$k_defs=array_keys($defs);
