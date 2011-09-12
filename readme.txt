@@ -1,52 +1,38 @@
-﻿=== Multi Functional Flexi Lightbox ===
-Contributors: Arevico
-Donate link: 
-Tags: twitter, post, plugin, facebook, lightbox, thickbox, traffic, backlinks, seo, opt-in squeeze
-Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 1.2
+﻿=== Facebook Page Promoter Lightbox ===
+Contributors: Arevico 
+Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
+Requires at least: 2.8
+Tested up to: 3.2.1
+Stable tag: 1.0
 
-Multi Functional Flexi Lightbox: With this plugin you can promote contest, grow your opt-in list, etc. This is a multi functional, flexible lightbox.  
-
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
 == Description ==
 
-Multi Functional Flexi Lightbox: Imagine all lightbox uses you can think off. Imagine what effects this can have too you traffic.     
+All your visitors should know about your facebook page and tell their frienda. With this plugin you can display a preconfigured Facebook Page-Like Box inside a  lightbox   
 
-= Features =
-With this plugin you can:
- * Promote blog post with an higher adsense EPC
- * Display a opt-in form in a lightbox
- * Advertise Clickbank/LinkShare/Amazon and other affiliate products
- * Put a facebook button in a lightbox, to get a bigger social media footprint
- * Put in any other html code  
- 
+**Features:**
 
-
-== Changelog ==
-
-= Version 1.2 =
-
-* Fixed bug which messed up layout
-* Overal code improvements
-* Fixed jQuery enquing
-
-= Version 1.1 =
-
-* Fixed jQuery Bug 
-
-= Version 1.0 = 
-
-* Initial release
+*   Display the facebook lightbox onload with or witouth a delay
+*   Limit the lightbox to once every $x days for individual visitors
+*   Promote your own facebook fan page
+*   No api key needed at time of writing
+*   Facebook page is needed 
 
 == Installation ==
 
-= 2.8 and Older =
-Sorry, we do not officially support installations on WordPress 2.8 or older.
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
-= 2.9, 3.0+ =
-You can install the plugin directly from the WordPress admin! Once installed, visit the settings tab to change the default settings. 
+Navigate to the wp-settings tab and set your preferences.
 
-
+***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==
 
+**Q. How to obtain my Facebook FanPage ID?:**
+
+A. <a href=\"http://rieglerova.net/how-to-get-a-facebook-fan-page-id/\">*http://rieglerova.net/how-to-get-a-facebook-fan-page-id/*</a> * (no associated site) has good instruction on how to get the fanpage id
+== Screenshots ==
+1. An example of Facebook Page Promoter Lightbox in action
+
+== Changelog ==
+**Initial release**
