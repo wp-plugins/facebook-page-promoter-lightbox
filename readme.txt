@@ -18,7 +18,7 @@ All your visitors should know about your facebook page and tell their friends. W
 *   Limit the lightbox to once every $x days for individual visitors
 *   Promote your own facebook fan page
 *   No api key needed at time of writing
-*   Facebook page is needed   
+*   Facebook page is needed    
 
 == Installation ==
 
