@@ -15,7 +15,7 @@ function arv_fbx_options_add_page() {
 }
 // This function sets default options for an array
 function defaulter($arr_opt,$reset=false){
-	$defs = array('fancybox'=>'0','fb_id' => '10376464573','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','exc' => '[exclude]');
+	$defs = array('fancybox'=>'-1','fb_id' => '287663154583826','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','exc' => '[exclude]');
 	$checkboxes = array("display_on_post","display_on_page","fancybox");
 
 	$k_defs=array_keys($defs);
@@ -23,8 +23,8 @@ function defaulter($arr_opt,$reset=false){
 
 	foreach ($k_defs as $opt){
 		/*_____________________________________*/
-		if (in_array($opt,$checkboxes) && $arr_opt[$opt]==""){
-			$arr_opt[$opt]=0;
+		if (in_array($opt,$checkboxes) && (!isset($arr_opt[$opt]) || $arr_opt[$opt]=="" )){
+			$arr_opt[$opt]=-1;
 		}
 		if ( (!isset($arr_opt[$opt])) || ($arr_opt[$opt]=="") ){
 			$arr_opt[$opt]=$defs[$opt];
@@ -46,7 +46,7 @@ function arv_fbx_options_do_page() {
 
 	<div class="updated settings-error">
 		<strong><p>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://arevico.com/out/?p=hyperfacebook2">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a></p>
-		<a href="http://arevico.com/out/?p=hyperfacebook2" target="_blank"><img src="http://www.hyperfbtraffic.com/images/GraphicsBanners/banner-4.jpg" width="468" height="60" border=0></a>
+		<a href="http://arevico.com/out/?p=hyperfacebook2" target="_blank"><img src="http://arevico.com/ad/banner.php" width="468" height="60" border=0></a>
 </strong>
 	</div>
 
@@ -56,7 +56,7 @@ function arv_fbx_options_do_page() {
 			<?php $options = defaulter(get_option('arv_fbx'));?>
 
 			<table class="form-table">
-				<tr valign="top"><th scope="row">Facebook Page ID (How?):</th>
+				<tr valign="top"><th scope="row">Facebook Fan Page Numeric ID:</th>
 					<td><input type="text" name="arv_fbx[fb_id]" value="<?php echo $options['fb_id']; ?>" /></td>
 					</td>
 				</tr>
