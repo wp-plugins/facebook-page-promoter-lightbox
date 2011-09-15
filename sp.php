@@ -20,7 +20,7 @@ function lb_appender($content){
 	$lr .= js_localize("lb_l_ret",$options);
 	$lr .= genScript(array('scs/launch.js'));
 
-	if (!$options['fancybox']) {
+	if ($options['fancybox']<=0) {
 		$content .= genScript(array('scs/scs.js'));
 	}
 		$content .= genStyle(array('scs/scs.css')) . $lr;
