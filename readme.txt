@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=friso
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
@@ -41,4 +41,9 @@ A. This plugins only works with facebook Fan pages, make sure to put in the NUME
 1. An example of Facebook Page Promoter Lightbox in action
 
 == Changelog ==
+
+= Version 1.1 =
+**Fixed option page bug, deselecting was not possible
+
+= Version 1.0 =
 **Initial release**
