@@ -20,6 +20,11 @@ All your visitors should know about your facebook page and tell their friends. W
 *   No api key needed at time of writing 
 *   Facebook page is needed     
 
+**Requirements:**
+
+* PHP 5
+* Facebook Fanpage
+
 == Installation ==
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
