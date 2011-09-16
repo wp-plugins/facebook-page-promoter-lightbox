@@ -12,7 +12,7 @@ require_once(rtrim(dirname(__FILE__), '/\\') . DIRECTORY_SEPARATOR . 'options.ph
 
 function lb_appender($content){
 	$options=defaulter(get_option('arv_fbx'));
-	if (!stristr($content,$options['exc']) && ((is_single() && $options['display_on_post'] ) || (is_page() && $options['display_on_page'] ))){
+	if (!stristr($content,$options['exc']) && ((is_single() && ($options['display_on_post']==1) ) || (is_page() && ($options['display_on_page'] ==1)))){
 
 	$lr .= '<!-- An Arevico Plugin: Facebook Page Promoter Lightbox. --><div id="fb-root"></div><script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript">
 			</script><script>FB.init();</script><a id="inline" href="#data" style="display: none;">Show</a><div style="display:none">
