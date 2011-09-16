@@ -38,7 +38,7 @@ A. <a href=\"http://rieglerova.net/how-to-get-a-facebook-fan-page-id/\">*http://
 A. This plugins only works with facebook Fan pages, make sure to put in the NUMERIC ID of your Facebook Fanpage
 
 == Screenshots ==
-1. An example of Facebook Page Promoter Lightbox in action
+1. An example of Facebook Page Promoter Lightbox in action 
 
 == Changelog ==
 
