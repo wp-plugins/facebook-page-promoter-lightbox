@@ -45,8 +45,8 @@ function arv_fbx_options_do_page() {
 
 
 	<div class="updated settings-error">
-		<p><strong><a href="http://www.traffictravis.com/professional?aff=Arevico">Check out: Traffic Travis Seo / Traffic software</a></strong></p>
-		<a href="http://www.traffictravis.com/professional?aff=Arevico"><img src="http://www.traffictravis.com/img/affiliates/v4/non-animated/728x90.jpg"></a>		
+		<p><strong><a href="http://www.traffictravis.com/trial?aff=Arevico">Check out: Traffic Travis Seo / Traffic software</a></strong></p>
+		<a href="http://www.traffictravis.com/trial?aff=Arevico"><img src="http://www.traffictravis.com/img/affiliates/v4/non-animated/728x90.jpg"></a>		
 </strong>
 	</div>
 
