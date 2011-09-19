@@ -29,7 +29,7 @@ All your visitors should know about your facebook page and tell their friends. W
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page. 
 
-Navigate to the wp-settings tab and set your preferences.   
+Navigate to the wp-settings tab and set your preferences.
 
 ***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==

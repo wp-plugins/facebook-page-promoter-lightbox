@@ -33,7 +33,7 @@ function defaulter($arr_opt,$reset=false){
 
 	} return $arr_opt;
 }
-// Draw the menu page itself
+// Draw the menu page itself 
 function arv_fbx_options_do_page() {
 	?>
 	<div class="wrap">
