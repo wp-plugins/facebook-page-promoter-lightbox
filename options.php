@@ -43,11 +43,9 @@ function arv_fbx_options_do_page() {
     </div>
 	<?php } ?>
 
-
 	<div class="updated settings-error">
-		<p><strong><a href="http://www.traffictravis.com/trial?aff=Arevico">Check out: Traffic Travis Seo / Traffic software</a></strong></p>
-		<a href="http://www.traffictravis.com/trial?aff=Arevico"><img src="http://www.traffictravis.com/img/affiliates/v4/non-animated/728x90.jpg"></a>		
-</strong>
+		<p><strong><a href="http://arevico.comblue.hop.clickbank.net?x=91">Checkout The Internet Marketing Advantage</a></strong></p>
+		<a href="http://arevico.comblue.hop.clickbank.net?x=91"><img src="http://arevico.com/ad/banner.php?f=ima"></a>		
 	</div>
 
 	<h2>Options</h2>
