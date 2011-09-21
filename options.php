@@ -44,8 +44,8 @@ function arv_fbx_options_do_page() {
 	<?php } ?>
 
 	<div class="updated settings-error">
-		<p><strong><a href="http://arevico.comblue.hop.clickbank.net?x=91">Checkout The Internet Marketing Advantage</a></strong></p>
-		<a href="http://arevico.comblue.hop.clickbank.net?x=91"><img src="http://arevico.com/ad/banner.php?f=ima"></a>		
+		<p><strong><a href="http://arevico.comblue.hop.clickbank.net?x=100">Checkout The Internet Marketing Advantage</a></strong></p>
+		<a href="http://arevico.comblue.hop.clickbank.net?x=100"><img src="http://arevico.com/ad/banner.php?f=ima"></a>		
 	</div>
 
 	<h2>Options</h2>
