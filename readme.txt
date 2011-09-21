@@ -27,7 +27,7 @@ All your visitors should know about your facebook page and tell their friends. W
 
 == Installation ==
 
-Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.   
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
 Navigate to the wp-settings tab and set your preferences. 
 
