@@ -5,7 +5,7 @@
    Description:  All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
    Version: 1.1
    Author: Arevico
-   Author URI: http://arevico.com/
+   Author URI: http://arevico.com/kb-facebook-page-lightbox/
    Copyright: 2011, Arevico
 */
 require_once(rtrim(dirname(__FILE__), '/\\') . DIRECTORY_SEPARATOR . 'options.php');
