@@ -44,8 +44,8 @@ function arv_fbx_options_do_page() {
 	<?php } ?>
 
 	<div class="updated settings-error">
-		<p><strong><a href="http://arevico.comblue.hop.clickbank.net?x=91">Checkout The Internet Marketing Advantage</a></strong></p>
-		<a href="http://arevico.comblue.hop.clickbank.net?x=91"><img src="http://arevico.com/ad/banner.php?f=ima"></a>		
+		<p><strong>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://arevico.com/out/?p=hyperfacebook2">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a><br /><a href="http://arevico.com/out/?p=hyperfacebook2" target="_blank"><img src="http://www.hyperfbtraffic.com/images/GraphicsBanners/banner-4.jpg" width="468" height="60" border=0></a></strong>
+		</p>		
 	</div>
 
 	<h2>Options</h2>
