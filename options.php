@@ -43,10 +43,11 @@ function arv_fbx_options_do_page() {
     </div>
 	<?php } ?>
 
-	<div class="updated settings-error">
-		<p><strong>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://arevico.com/out/?p=hyperfacebook2">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a><br /><a href="http://arevico.com/out/?p=hyperfacebook2" target="_blank"><img src="http://www.hyperfbtraffic.com/images/GraphicsBanners/banner-4.jpg" width="468" height="60" border=0></a></strong>
-		</p>		
+		<div class="updated settings-error">
+			<p><strong>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://arevico.com/out/?p=hyperfacebook2">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a><br /><a href="http://arevico.com/out/?p=hyperfacebook2" target="_blank"><img src="http://www.arevico.com/banner.php" width="468" height="60" border=0></a></strong>
+		</p>			
 	</div>
+
 
 	<h2>Options</h2>
 		<form method="post" action="options.php" id="fl">
