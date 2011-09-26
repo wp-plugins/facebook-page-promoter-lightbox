@@ -14,10 +14,10 @@ All your visitors should know about your facebook page and tell their friends. W
 
 **Features:**
 
-*   Display the facebook lightbox onload with or witouth a delay
+*   Display the facebook lightbox onload with or witouth a delay 
 *   Limit the lightbox to once every x days for individual visitors 
 *   Promote your own facebook fan page
-*   No api key needed at time of writing 
+*   No api key needed at time of writing
 *   Facebook page is needed
 [youtube http://www.youtube.com/watch?v=0IE4dj8Qoko]
 
