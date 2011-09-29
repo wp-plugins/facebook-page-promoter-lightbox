@@ -41,7 +41,7 @@ A. <a href=\"http://rieglerova.net/how-to-get-a-facebook-fan-page-id/\">*http://
 
 **Q. I'm getting error: Could not retrieve id for the specified page. Please verify correct href was passed in.**
 
-A. This plugins only works with facebook Fan pages, make sure to put in the NUMERIC ID of your Facebook Fanpage
+A. This plugins only works with facebook Fan pages, make sure to put in the NUMERIC ID of your Facebook Fanpage.
 
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action 
