@@ -24,7 +24,7 @@ All your visitors should know about your facebook page and tell their friends. W
 **Requirements:**
 
 * PHP 5 
-* Facebook Fanpage
+* Facebook Fanpage 
 
 == Installation ==
 
