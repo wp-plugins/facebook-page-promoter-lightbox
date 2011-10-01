@@ -37,7 +37,7 @@ Navigate to the wp-settings tab and set your preferences.
 
 **Q. How to obtain my Facebook FanPage ID?:**
 
-A. <a href=\"http://rieglerova.net/how-to-get-a-facebook-fan-page-id/\">*http://rieglerova.net/how-to-get-a-facebook-fan-page-id/*</a> * (no associated site) has good instruction on how to get the fanpage id   
+A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id   
 
 **Q. I'm getting error: Could not retrieve id for the specified page. Please verify correct href was passed in.**
 
