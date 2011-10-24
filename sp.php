@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', 'my_jq_apper');
 
 /**
 *	Generate Script code ()
-* 	@param $arr_rel_src array, with relative script source to the plugin directory, no leading slash
+* 	@param $arr_rel_src array, with relative script sources to the plugin directory, no leading slash
 * */
 function genScript($arr_rel_src){
 	$lret="";
