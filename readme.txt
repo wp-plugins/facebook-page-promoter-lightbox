@@ -10,7 +10,7 @@ All your visitors should know about your facebook page and tell their friends. W
 
 == Description ==
 
-All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box insidea  lightbox
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box insidea  lightbox 
 
 **Features:**
 
@@ -24,7 +24,7 @@ All your visitors should know about your facebook page and tell their friends. W
 **Requirements:**
 
 * PHP 5
-* Facebook Fanpage 
+* Facebook Fanpage
 
 == Installation ==
 
