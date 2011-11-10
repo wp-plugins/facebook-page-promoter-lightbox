@@ -57,14 +57,9 @@ function __construct(){
 	<?php } ?>
 
 		<div class="updated settings-error">
-			<p><a href="http://bit.ly/sAVa48">Be notified when the <b>Premium Version</b> is released:</a>
-			<ul>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Customizeable background / size</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Dark/Light facebook Schemes</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Show after scroll</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">More Features / Suggest</a></li>
-			</ul>
-			</p>
+		</p>
+			<script src="http://arevico.com/ad/arevico_ad_delivery.php"></script>
+			<a href="http://bit.ly/sAVa48"> Banner Free Premium Version?</a>
 		</p>
 	</div>
 
