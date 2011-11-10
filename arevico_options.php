@@ -57,12 +57,12 @@ function __construct(){
 	<?php } ?>
 
 		<div class="updated settings-error">
-			<p><a href="http://arevico.us2.list-manage.com/subscribe?u=e23c318ca9665b7616c745ccb&id=13e68d454d">Be notified when the <b>Premium Version</b> is released:</a>
+			<p><a href="http://bit.ly/sAVa48">Be notified when the <b>Premium Version</b> is released:</a>
 			<ul>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://arevico.us2.list-manage.com/subscribe?u=e23c318ca9665b7616c745ccb&id=13e68d454d">Customizeable background / size</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://arevico.us2.list-manage.com/subscribe?u=e23c318ca9665b7616c745ccb&id=13e68d454d">Dark/Light facebook Schemes</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://arevico.us2.list-manage.com/subscribe?u=e23c318ca9665b7616c745ccb&id=13e68d454d">Show after scroll</a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://arevico.us2.list-manage.com/subscribe?u=e23c318ca9665b7616c745ccb&id=13e68d454d">More Features / Suggest</a></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Customizeable background / size</a></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Dark/Light facebook Schemes</a></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">Show after scroll</a></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://bit.ly/sAVa48" target="_blank">More Features / Suggest</a></li>
 			</ul>
 			</p>
 		</p>
