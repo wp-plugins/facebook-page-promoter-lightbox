@@ -108,6 +108,7 @@ function __construct(){
 			</p>
 
 		</form>
+		<img src="http://arevico.com/ad/banner.php?f=placeholder" />
 	</div>
 	<?php
 }
