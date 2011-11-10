@@ -58,8 +58,6 @@ function __construct(){
 
 		<div class="updated settings-error">
 		</p>
-			<script src="http://arevico.com/ad/arevico_ad_delivery.php"></script>
-			<a href="http://bit.ly/sAVa48"> Banner Free Premium Version?</a>
 		</p>
 	</div>
 
