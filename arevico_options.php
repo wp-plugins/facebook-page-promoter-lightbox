@@ -58,8 +58,9 @@ function __construct(){
 
 		<div class="updated settings-error">
 		</p>
+		<strong>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://b0e48wu1-gmc2tae-3j1k1k74y.hop.clickbank.net/">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a><br><a href="http://b0e48wu1-gmc2tae-3j1k1k74y.hop.clickbank.net/"><img src="http://arevico.com/ad/banner.php" style="border-style: none;"></a></strong>
 		</p>
-	</div>
+		`</div>
 
 
 	<h2>Options</h2>
