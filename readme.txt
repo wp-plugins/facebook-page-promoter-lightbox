@@ -18,7 +18,7 @@ All your visitors should know about your facebook page and tell their friends. W
 *   Limit the lightbox to once every x days for individual visitors 
 *   Promote your own facebook fan page 
 *   Uses the NEW facebook likebox code (no more the old depreciated version)
-*   No api key needed at time of writing
+*   No api key needed
 *   Facebook page is needed
 
 [youtube http://www.youtube.com/watch?v=0IE4dj8Qoko]
@@ -44,6 +44,10 @@ A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://ar
 **Q. I'm getting error: Could not retrieve id for the specified page. Please verify correct href was passed in.**
 
 A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
+
+**Q. Can i hide it when the user allready liked it?:**
+
+A. Currently this is not possible, due the complexity I might implement this in the premium version
 
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action 
