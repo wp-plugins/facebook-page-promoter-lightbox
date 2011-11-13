@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=friso
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 2.0
+Stable tag: 2.1
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
@@ -53,6 +53,9 @@ A. Currently this is not possible, due the complexity I might implement this in 
 1. An example of Facebook Page Promoter Lightbox in action 
 
 == Changelog ==
+
+= Version 2.1 =
+Fixed scrollbar issue in google chrome
 
 = Version 2.0 =
 Full rework of all code. Facebook code has been updated from the old depreciated code to a new iframe code. Has now the option to reliably display on homepage, and any other page in a better way than the old plugin. WARNING: the layout of the new facebook box is different than the old one!
