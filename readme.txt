@@ -45,9 +45,9 @@ A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://ar
 
 A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
 
-**Q. Can i hide it when the user allready liked it?:**
+**Q. Can i hide it when the user already liked it?:**
 
-A. Currently this is not possible, due the complexity I might implement this in the premium version
+A. Currently this is not possible, due the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
 
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action 
