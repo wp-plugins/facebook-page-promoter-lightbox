@@ -18,8 +18,9 @@ All your visitors should know about your facebook page and tell their friends. W
 *   Limit the lightbox to once every x days for individual visitors 
 *   Promote your own facebook fan page 
 *   Uses the NEW facebook likebox code (no more the old depreciated version)
-*   No api key needed
 *   Facebook page is needed
+*   No api key needed
+
 
 [youtube http://www.youtube.com/watch?v=0IE4dj8Qoko]
 
