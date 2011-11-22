@@ -17,6 +17,6 @@ require('arevico_plugin.php');
 
 $arevico_facebook_func=new arevico_facebook_func();
 $arevico_facebook_opt=new arevico_facebook_opt();
-$arevico_facebook=new arevico_facebook(); //TODO: Check if options need to be in the constructor.
+$arevico_facebook=new arevico_facebook();
 
 ?>
