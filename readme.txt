@@ -56,7 +56,7 @@ A. Currently this is not possible, due the complexity I might implement this in 
 == Changelog ==
 
 = Version 2.1 =
-Fixed scrollbar issue in google chrome
+Fixed scrollbar issue in google chrome. Minor optimizations
 
 = Version 2.0 =
 Full rework of all code. Facebook code has been updated from the old depreciated code to a new iframe code. Has now the option to reliably display on homepage, and any other page in a better way than the old plugin. WARNING: the layout of the new facebook box is different than the old one!
