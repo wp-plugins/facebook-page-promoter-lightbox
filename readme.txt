@@ -48,7 +48,7 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 
 **Q. Can i hide it when the user already liked it?:**
 
-A. Currently this is not possible, due the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
+A. Currently this is not possible, due to the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
 
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action 
