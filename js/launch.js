@@ -17,7 +17,8 @@ function show_facebox(){
 	if (lb_l_ret.show_once>0){
 		createCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
-$j('body').append(d_e(lb_l_ret.lbcode));
+
+$j('body').append(construct_code());
 
 $j('a#inline').fancybox({
 	'modal': false,
@@ -51,6 +52,14 @@ function readCookie(name) {
 	return null;
 }
 
-	function d_e(s){
-		return s.replace(/&#([^\s]*);/g, function(match, match2) {return String.fromCharCode(Number(match2));})
-	}
+/**
+ *
+ * @access public
+ * @return void
+ **/
+function construct_code(){
+fbl_otp='<a id="inline" href="#data" style="display: none;">Show</a><div style="display:none"><div id="data" style="overflow:hidden;' + '' + '">';
+fbl_otp += '<iframe src="//www.facebook.com/plugins/likebox.php?id=' + lb_l_ret.fb_id +'&amp;width=' + lb_l_ret.width + '&amp;height=' + lb_l_ret.height +'&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:' + lb_l_ret.width + 'px; height:' + lb_l_ret.height + 'px;" allowTransparency="true"></iframe>';
+fbl_otp +='</div></div>';
+return fbl_otp;
+}

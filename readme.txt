@@ -2,15 +2,15 @@
 Contributors: Arevico 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=frisokluitenberg%40hotmail%2ecom&lc=EC&item_name=Arevico%20Software&no_note=1&no_shipping=1&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
-Requires at least: 2.8
+Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 2.2
+Stable tag: 2.3
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a Facebook Page-Like, Light Box
 
 == Description ==
 
-All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a  lightbox 
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box insidea  lightbox 
 
 **Features:**
 
@@ -48,18 +48,21 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 
 **Q. Can i hide it when the user already liked it?:**
 
-A. Currently this is not possible, due to the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
+A. Currently this is not possible, due the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
 
 == Screenshots ==
 1. An example of Facebook Page Promoter Lightbox in action 
 
 == Changelog ==
 
-= Version 2.1 =
-Compatibility update
+= Version 2.3 =
+Wordpress version compatibility update. Be aware, that your options will be reset!
+
+= Version 2.2 =
+Emergency fix
 
 = Version 2.1 =
-Fixed scrollbar issue in google chrome. Minor optimizations
+Fixed scrollbar issue in google chrome
 
 = Version 2.0 =
 Full rework of all code. Facebook code has been updated from the old depreciated code to a new iframe code. Has now the option to reliably display on homepage, and any other page in a better way than the old plugin. WARNING: the layout of the new facebook box is different than the old one!

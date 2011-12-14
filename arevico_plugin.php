@@ -26,17 +26,12 @@ class arevico_facebook{
 
 		wp_register_script('arevico_scsfb_launch', $current_loc . 'js/launch.js');
 		wp_enqueue_script ('arevico_scsfb_launch');
-			$lr  = '';
-			$lr .= '<a id="inline" href="#data" style="display: none;">Show</a><div style="display:none"><div id="data" style="background-color:white;overflow:hidden;">';
-			$lr .= '<iframe src="//www.facebook.com/plugins/likebox.php?id='.$options['fb_id'].'&amp;width=400&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:258px;" allowTransparency="true"></iframe>';
-		$lr .='</div></div>';
 
-		$lr=array('lbcode' => $lr,'delay'=>$options['delay'],'show_once' => $options['show_once']);
-
-		wp_localize_script('arevico_scsfb_launch','lb_l_ret',$lr);
+		wp_localize_script('arevico_scsfb_launch','lb_l_ret',$options);
 	}
 		/*======================================================================*/
 
 	}
 }
+
 ?>
