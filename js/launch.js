@@ -17,8 +17,7 @@ function show_facebox(){
 	if (lb_l_ret.show_once>0){
 		createCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
-	var decoded = $j("<div/>").html(lb_l_ret.lbcode).text();
-		$j('body').append(decoded);
+$j('body').append(d_e(lb_l_ret.lbcode));
 
 $j('a#inline').fancybox({
 	'modal': false,
@@ -51,3 +50,7 @@ function readCookie(name) {
 	}
 	return null;
 }
+
+	function d_e(s){
+		return s.replace(/&#([^\s]*);/g, function(match, match2) {return String.fromCharCode(Number(match2));})
+	}
