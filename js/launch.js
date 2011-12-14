@@ -59,7 +59,7 @@ function readCookie(name) {
  **/
 function construct_code(){
 fbl_otp='<a id="inline" href="#data" style="display: none;">Show</a><div style="display:none"><div id="data" style="overflow:hidden;' + '' + '">';
-fbl_otp += '<iframe src="//www.facebook.com/plugins/likebox.php?id=' + lb_l_ret.fb_id +'&amp;width=' + lb_l_ret.width + '&amp;height=' + lb_l_ret.height +'&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:' + lb_l_ret.width + 'px; height:' + lb_l_ret.height + 'px;" allowTransparency="true"></iframe>';
+fbl_otp += '<iframe src="//www.facebook.com/plugins/likebox.php?id=' + lb_l_ret.fb_id +'&amp;width=' + '400' + '&amp;height=' + '255' +'&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:' + '400' + 'px; height:' + '255' + 'px;" allowTransparency="true"></iframe>';
 fbl_otp +='</div></div>';
 return fbl_otp;
 }
