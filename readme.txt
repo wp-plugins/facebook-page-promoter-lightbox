@@ -50,9 +50,6 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 
 A. Currently this is not possible, due the complexity I might implement this in the premium version. However, it is not very likely to be implemented as the user will need to authenticate the app which defeats the whole purpose of a likebox.
 
-== Screenshots ==
-1. An example of Facebook Page Promoter Lightbox in action 
-
 == Changelog ==
 
 = Version 2.4 =
