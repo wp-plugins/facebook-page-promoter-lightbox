@@ -55,6 +55,9 @@ A. Currently this is not possible, due the complexity I might implement this in 
 
 == Changelog ==
 
+= Version 2.4 =
+Fixed z-index issue with twenty ten theme and this plugin. Added link to the premium version of the plugin.
+
 = Version 2.3 =
 Wordpress version compatibility update. Be aware, that your options will be reset!
 
