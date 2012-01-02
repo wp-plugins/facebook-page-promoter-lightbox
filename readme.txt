@@ -29,6 +29,11 @@ All your visitors should know about your facebook page and tell their friends. W
 * PHP 5
 * Facebook Fanpage
 
+== Screenshots ==
+1. The plugin in action.
+2. The plugin in action.
+3. General options
+4. Premium options
 == Installation ==
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
