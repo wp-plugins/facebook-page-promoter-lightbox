@@ -15,8 +15,8 @@ All your visitors should know about your facebook page and tell their friends. W
 **Features:**
 
 *   Display the facebook lightbox onload with or without a delay
-*   Limit the lightbox to once every x days for individual visitors 
-*   Promote your own facebook fan page 
+*   Limit the lightbox to once every x days per individual visitors 
+*   Promote your own facebook fan page
 *   Uses the NEW facebook likebox code (no more the old depreciated version)
 *   Facebook page is needed
 *   No api key needed
