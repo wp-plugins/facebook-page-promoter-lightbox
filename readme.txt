@@ -44,6 +44,9 @@ Navigate to the wp-settings tab and set your preferences.
 ***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==
 
+**Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
+A.   While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
+
 **Q. How to obtain my Facebook FanPage ID?:**
 
 A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id   
