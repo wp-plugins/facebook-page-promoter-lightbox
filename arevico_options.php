@@ -70,7 +70,7 @@ function __construct(){
 		</div>
 
 	<h2>Options</h2>
-		<div><a href="http://arevico.com/sp-facebook-lightbox-premium/">Check Out the Premium Version</a></div>
+		<div><a href="http://arevico.com/sp-facebook-lightbox-premium/">Check Out the Premium Version (no ads, custom styles, etc)</a></div>
 
 		<form method="post" action="options.php" id="fl">
 		<?php settings_fields($this->option_group); ?>
