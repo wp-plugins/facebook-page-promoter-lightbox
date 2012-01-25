@@ -45,7 +45,7 @@ Navigate to the wp-settings tab and set your preferences.
 == Frequently Asked Questions ==
 
 **Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
-A.   While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
+A. While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
 
 **Q. How to obtain my Facebook FanPage ID?:**
 
