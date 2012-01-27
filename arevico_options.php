@@ -12,12 +12,15 @@ var $setting_slug="arv_fb";
 var $setting_title="Facebook Lightbox";
 var $menu_title="Facebook Lightbox";
 
+var $can_be_null;
 var $global_slug="arevico_settings";
 /*______________________*/
 
 function __construct(){
 	/*______ DEFAULT OPTIONS________*/
 	$this->defaults = array('extracss'=>'','overlayop'=>'0.3','overlaycolor'=>'#666666','display_on_homepage'=>'1' , 'fancybox'=>'-1','fb_id' => '287663154583826','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','width'=>'400','height' => '255');
+	$this->can_be_null=array('display_on_post','display_on_page','fancybox','display_on_homepage','facebookheader','gaevent');
+
 	/*__________________________________________________________________*/
 	add_action('admin_init', array(&$this,'options_init'));
 	add_action('admin_menu', array(&$this,'options_add_page'));
@@ -25,9 +28,21 @@ function __construct(){
 
 }
 	function getOption(){
-		return get_option($this->option_name,$this->defaults);
+		$opt= get_option($this->option_name,$this->defaults);
+		$ak= array_merge(array_keys($opt),array_keys($opt),$this->can_be_null) ;
+
+		$ak_not_inc=array_keys($this->can_be_null);
+		foreach ($ak as $lak){
+				if( (!isset($opt[$lak])) && (!in_array($lak,$this->can_be_null))){
+				$opt[$lak]=$this->defaults[$lak];
+
+				} else if( (!isset($opt[$lak])) && (in_array($lak,$this->can_be_null))){
+					$opt[$lak]="";
+				}
+
+		}
+		return $opt;
 	}
-	// Init plugin options to white list our options
 	function options_init(){
 		global $current_loc;
 		register_setting( $this->option_group, $this->option_name, array(&$this,'options_val'));
