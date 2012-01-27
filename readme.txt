@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=friso
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 2.4
+Stable tag: 2.5
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
 
@@ -56,6 +56,9 @@ A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://ar
 A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
 
 == Changelog ==
+
+= Version 2.4 =
+Code maintenance and optimizations.
 
 = Version 2.4 =
 Fixed z-index issue with twenty ten theme and this plugin. Added link to the premium version of the plugin. Included link to premium version on option page. Small optimizations. Added a few screenshots. 
