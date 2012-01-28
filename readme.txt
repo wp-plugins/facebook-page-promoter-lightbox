@@ -57,8 +57,8 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 
 == Changelog ==
 
-= Version 2.4 =
-Code maintenance and optimizations.
+= Version 2.5 =
+Code maintenance and optimizations. Fixed bug regarding to checkbox options.
 
 = Version 2.4 =
 Fixed z-index issue with twenty ten theme and this plugin. Added link to the premium version of the plugin. Included link to premium version on option page. Small optimizations. Added a few screenshots. 
