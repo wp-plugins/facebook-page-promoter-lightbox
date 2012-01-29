@@ -10,14 +10,13 @@ All your visitors should know about your facebook page and tell their friends. W
 
 == Description ==
 
-All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox 
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
 
 **Features:**
 
 *   Display the facebook lightbox onload with or without a delay
 *   Limit the lightbox to once every x days per individual visitors 
 *   Promote your own facebook fanpage
-*   Uses the NEW facebook likebox code (no more the old depreciated version)
 *   Facebook page is needed
 *   No api key needed
 
