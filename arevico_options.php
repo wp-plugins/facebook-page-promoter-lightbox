@@ -79,12 +79,10 @@ function __construct(){
 	<?php } ?>
 
 		<div class="updated settings-error">
-		</p>
 		<strong>Do more with Social Media: &nbsp;&nbsp;&nbsp;<a href="http://b0e48wu1-gmc2tae-3j1k1k74y.hop.clickbank.net/">Check Hyper Facebook Traffic. It will greatly help your social media presence And ultimately increase your traffic.</a><br><a href="http://b0e48wu1-gmc2tae-3j1k1k74y.hop.clickbank.net/"><img src="http://arevico.com/ad/banner.php" style="border-style: none;"></a></strong>
 		<br /><br />
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="background: #6A94D4;color:white;"><u>Check Out the Premium Version (hide on like, no ads, custom styles, etc)</a></u></div>
-
-		</p>
+		<hr />
+		<a href="http://arevico.com/sp-facebook-lightbox-premium/">Check Out what the Premium Version has to offer!</a></u></div>
 		</div>
 
 	<h2>Options</h2>

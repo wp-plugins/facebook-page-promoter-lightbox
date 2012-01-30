@@ -72,7 +72,7 @@ Emergency fix
 Fixed scrollbar issue in google chrome
 
 = Version 2.0 =
-Full rework of all code. Facebook code has been updated from the old depreciated code to a new iframe code. Has now the option to reliably display on homepage, and any other page in a better way than the old plugin. WARNING: the layout of the new facebook box is different than the old one!
+Full rework of all code. Facebook code has been updated from the old depreciated code to a new iframe code. Has now the option to reliably display on homepage, and any other page in a better way than the old plugin. 
 
 = Version 1.1 =
 **Fixed option page bug, deselecting was not possible
