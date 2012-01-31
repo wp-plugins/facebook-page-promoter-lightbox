@@ -80,6 +80,7 @@ function __construct(){
 
 		<div class="updated settings-error">
 		<a href="http://arevico.com/sp-facebook-lightbox-premium/">Check Out what the Premium Version has to offer!</a></u></div>
+		<a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q</a>
 		</div>
 
 	<h2>Options</h2>
