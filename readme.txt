@@ -54,6 +54,10 @@ A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://ar
 
 A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
 
+**Q. The close button doesn't appear?.**
+
+A. A lot of plugins and themes don't follow coding standards. For example your theme might have prototype or jquery hardcoded. This is a very serious problem. try to replace your theme's jquery.js or prototye.js file with the latest available version. This is most likely the problem!
+
 == Changelog ==
 
 = Version 2.5 =
