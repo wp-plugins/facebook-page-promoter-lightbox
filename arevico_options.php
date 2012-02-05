@@ -18,7 +18,7 @@ var $global_slug="arevico_settings";
 
 function __construct(){
 	/*______ DEFAULT OPTIONS________*/
-	$this->defaults = array('extracss'=>'','overlayop'=>'0.3','overlaycolor'=>'#666666','display_on_homepage'=>'1' , 'fancybox'=>'-1','fb_id' => '287663154583826','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','width'=>'400','height' => '255');
+	$this->defaults = array('extracss'=>'','overlayop'=>'0.3','overlaycolor'=>'#666666','display_on_homepage'=>'1' , 'fancybox'=>'-1','fb_id' => '','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','width'=>'400','height' => '255');
 	$this->can_be_null=array('display_on_post','display_on_page','fancybox','display_on_homepage','facebookheader','gaevent');
 
 	/*__________________________________________________________________*/
