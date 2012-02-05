@@ -15,14 +15,16 @@ class arevico_facebook{
 		if (((is_single() && ($options['display_on_post']==1) ) || (is_page() && ($options['display_on_page'] ==1)))
 		 || ((is_home() || is_front_page()) && $options['display_on_homepage']==1))  {
 		wp_enqueue_script("jquery");
-				if (!(isset($_GET['fancybox'])&& $_GET['fancybox']=='1')){
-					/*======================================================================*/
+				if ((isset($options['fancybox'])&& $options['fancybox']=='1')){
+		
+		} else {
 		wp_register_style('arevico_scsfbcss', $current_loc . 'scs/scs.css');
-		wp_enqueue_style( 'arevico_scsfbcss');
+		wp_enqueue_style( 'arevico_scsfbcss'); 
 
 		wp_register_script('arevico_scsfb',$current_loc . 'scs/scs.js');
 		wp_enqueue_script ('arevico_scsfb');
-		}
+	}
+
 		/*=======================================================================*/
 
 		wp_register_script('arevico_scsfb_launch', $current_loc . 'js/launch.js');
