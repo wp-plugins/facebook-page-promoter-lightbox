@@ -59,7 +59,7 @@ A. A lot of plugins and themes don't follow coding standards. For example your t
 == Changelog ==
 
 = Version 2.5 =
-Code maintenance and optimizations. Fixed bug regarding to checkbox options. Fixed phantom options.
+Code maintenance and optimizations. Fixed bug regarding to checkbox options. Fixed phantom options correctly this time.
 
 = Version 2.4 =
 Fixed z-index issue with twenty ten theme and this plugin. Added link to the premium version of the plugin. Included link to premium version on option page. Small optimizations. Added a few screenshots. 
