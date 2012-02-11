@@ -1,7 +1,7 @@
 <?php
 /*
    Plugin Name: Facebook Page Promoter Lightbox
-   Plugin URI: http://arevico.com/sp-facebook-lightbox-premium/
+   Plugin URI: http://arevico.com/kb-facebook-page-lightbox/
    Description:  All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
    Version: 2.5
    Author: Arevico
