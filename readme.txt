@@ -38,7 +38,6 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Navigate to the wp-settings tab and set your preferences.
 
-***NOTE: **If you use a plugin which loads fancybox on every page, you will need to select that at this plugin inorder to avoid conflict*
 == Frequently Asked Questions ==
 
 **Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
@@ -55,6 +54,10 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 **Q. The close button doesn't appear?.**
 
 A. A lot of plugins and themes don't follow coding standards. For example your theme might have prototype or jquery hardcoded. This is a very serious problem. try to replace your theme's jquery.js or prototye.js file with the latest available version. This is most likely the problem!
+
+**Q. Which browsers are supported?**
+
+A. All major browser except IE7/IE6
 
 == Changelog ==
 
