@@ -57,7 +57,7 @@ A. A lot of plugins and themes don't follow coding standards. For example your t
 
 **Q. Which browsers are supported?**
 
-A. All major browser except IE7/IE6
+A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 8+ and firefox.
 
 == Changelog ==
 
