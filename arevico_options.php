@@ -28,14 +28,21 @@ function __construct(){
 
 }
 	function getOption(){
+		/*
+		 * Merge array options with default
+		 */
+		 
 		$opt= get_option($this->option_name,$this->defaults);
 		$ak= array_merge(array_keys($opt),array_keys($opt),$this->can_be_null) ;
 
 		$ak_not_inc=array_keys($this->can_be_null);
+		
+		/* For Each aray key*/
 		foreach ($ak as $lak){
 				if( (!isset($opt[$lak])) && (!in_array($lak,$this->can_be_null))){
 				$opt[$lak]=$this->defaults[$lak];
-
+				
+				/* for checkbox options */
 				} else if( (!isset($opt[$lak])) && (in_array($lak,$this->can_be_null))){
 					$opt[$lak]="";
 				}

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=friso
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 2.5
+Stable tag: 2.5.2
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
 
