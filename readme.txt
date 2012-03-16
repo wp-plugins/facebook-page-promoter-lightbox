@@ -59,6 +59,10 @@ A. A lot of plugins and themes don't follow coding standards. For example your t
 
 A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 8+ and firefox.
 
+**Q. Lightbox is displayed to far to the right? **
+
+A. Make sure your theme's css hasn't set the 'position:relative;' attribute to the body element
+
 == Changelog ==
 
 = Version 2.5 =
