@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=friso
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
 
@@ -64,6 +64,9 @@ A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 
 A. Make sure your theme's css hasn't set the 'position:relative;' attribute to the body element
 
 == Changelog ==
+
+= Version 2.5.3 =
+Added support for archive pages
 
 = Version 2.5 =
 Code maintenance and optimizations. Fixed bug regarding to checkbox options. Fixed phantom options correctly this time. Added link to premium version.

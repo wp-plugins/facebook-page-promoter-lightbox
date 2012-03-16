@@ -18,8 +18,8 @@ var $global_slug="arevico_settings";
 
 function __construct(){
 	/*______ DEFAULT OPTIONS________*/
-	$this->defaults = array('extracss'=>'','overlayop'=>'0.3','overlaycolor'=>'#666666','display_on_homepage'=>'1' , 'fancybox'=>'-1','fb_id' => '','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','width'=>'400','height' => '255');
-	$this->can_be_null=array('display_on_post','display_on_page','fancybox','display_on_homepage','facebookheader','gaevent');
+	$this->defaults = array('extracss'=>'','overlayop'=>'0.3','overlaycolor'=>'#666666','display_on_homepage'=>'1' , 'fancybox'=>'-1','fb_id' => '','display_on_page' => '1','display_on_post' => '1','show_once' => '0','delay' => '1000','width'=>'400','height' => '255','display_on_archive'=>'1');
+	$this->can_be_null=array('display_on_post','display_on_page','fancybox','display_on_homepage','facebookheader','gaevent','eam','display_on_archive','hideonlike');
 
 	/*__________________________________________________________________*/
 	add_action('admin_init', array(&$this,'options_init'));
@@ -109,6 +109,7 @@ function __construct(){
 					<input name="<?php echo($this->option_name); ?>[display_on_page]" type="checkbox" value="1" <?php checked('1', $options['display_on_page']); ?> /> On Page &nbsp;&nbsp;&nbsp;&nbsp;
 					<input name="<?php echo($this->option_name); ?>[display_on_post]" type="checkbox" value="1" <?php checked('1', $options['display_on_post']); ?> /> On Post &nbsp;&nbsp;&nbsp;&nbsp;
 					<input name="<?php echo($this->option_name); ?>[display_on_homepage]" type="checkbox" value="1" <?php checked('1', $options['display_on_homepage']); ?> /> On HomePage &nbsp;&nbsp;&nbsp;&nbsp;
+					<input name="<?php echo($this->option_name); ?>[display_on_archive]" type="checkbox" value="1" <?php checked('1', $options['display_on_archive']); ?> /> On Archive's &nbsp;&nbsp;&nbsp;&nbsp;
 
 					</td>
 				</tr>
@@ -120,7 +121,7 @@ function __construct(){
 					<td><input type="text" name="<?php echo($this->option_name); ?>[delay]" value="<?php echo $options['delay']; ?>" /></td>
 				</tr>
 
-				<tr valign="top"><th scope="row">Disable Fancybox Load (when already being loaded)</th>
+				<tr valign="top"><th scope="row">Disable Fancybox (don't check unless sure)</th>
 					<td>
 					<input name="<?php echo($this->option_name); ?>[fancybox]" type="checkbox" value="1" <?php checked('1', $options['fancybox']); ?> />
 					</td>

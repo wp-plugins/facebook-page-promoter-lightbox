@@ -12,7 +12,7 @@ class arevico_facebook{
 		/*======================================================================*/
 		$options=$arevico_facebook_opt->getOption();
 
-		if (((is_single() && ($options['display_on_post']==1) ) || (is_page() && ($options['display_on_page'] ==1)))
+		if (((is_single() && ($options['display_on_post']==1) ) || (is_page() && ($options['display_on_page'] ==1)) || (is_archive() && ($options['display_on_archive'] ==1)))
 		 || ((is_home() || is_front_page()) && $options['display_on_homepage']==1))  {
 		wp_enqueue_script("jquery");
 				if ((isset($options['fancybox'])&& $options['fancybox']=='1')){
