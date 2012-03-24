@@ -14,10 +14,10 @@ All your visitors should know about your facebook page and tell their friends. W
 
 **Features:**
 
+*   Facebook page is needed
 *   Display the facebook lightbox onload with or without a delay
 *   Limit the lightbox to once every x days per individual visitors 
 *   Promote your own facebook fanpage
-*   Facebook page is needed
 *   No api key needed (works with iframe, premium version uses xfbml and requires api key)
 
 [youtube http://www.youtube.com/watch?v=0IE4dj8Qoko]
@@ -62,6 +62,10 @@ A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 
 **Q. Lightbox is displayed to far to the right? **
 
 A. Make sure your theme's css hasn't set the 'position:relative;' attribute to the body element
+
+**Q. The Overlay doesn't dispay or is pushed to the bottom of the page? **
+
+A. This issue can be caused in internet explorere when your theme doesn't have a valid doctype. Set the doctype in your theme and it should work.
 
 == Changelog ==
 
