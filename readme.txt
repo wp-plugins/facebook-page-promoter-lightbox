@@ -55,22 +55,25 @@ A. This plugins only works with facebook Fan pages, make sure to put in the nume
 
 A. A lot of plugins and themes don't follow coding standards. For example your theme might have prototype or jquery hardcoded. This is a very serious problem. try to replace your theme's jquery.js or prototye.js file with the latest available version. This is most likely the problem!
 
-**Q. Which browsers are supported?**
+**Q. Which browsers are supported?.**
 
 A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 8+ and firefox.
 
-**Q. Lightbox is displayed to far to the right? **
+**Q. Lightbox is displayed to far to the right?.**
 
 A. Make sure your theme's css hasn't set the 'position:relative;' attribute to the body element
 
-**Q. The Overlay doesn't dispay or is pushed to the bottom of the page? **
+**Q. The Overlay doesn't dispay or is pushed to the bottom of the page?.**
 
 A. This issue can be caused in internet explorere when your theme doesn't have a valid doctype. Set the doctype in your theme and it should work.
+
+**Q. Youtube videos show trough the lightbox?**
+A. To fix this issue, set the wmode=transparent parameter to the youtube embed url!
 
 == Changelog ==
 
 = Version 2.5.3 =
-Added support for archive pages
+Added support for archive pages.
 
 = Version 2.5 =
 Code maintenance and optimizations. Fixed bug regarding to checkbox options. Fixed phantom options correctly this time. Added link to premium version.
