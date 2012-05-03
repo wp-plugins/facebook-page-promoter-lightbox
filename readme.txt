@@ -47,6 +47,10 @@ A. While using facebook as a page, you can't use any social plugins. To do this,
 
 A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id   
 
+**Q. It conflict with other social plugins? how can I fix it? **
+
+A. Make sure that other social plugins use the iframe version. If you need the xfbml make sure, that you aways specify the application/api Key and use only one per page!
+
 **Q. I'm getting error: Could not retrieve id for the specified page. Please verify correct href was passed in.**
 
 A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
