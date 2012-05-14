@@ -85,8 +85,8 @@ function __construct(){
     </div>
 	<?php } ?>
 
-		<div class="updated settings-error">
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/">Check Out what the Premium Version has to offer!</a></u></div>
+		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
+		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u></div>
 		<a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q</a>
 		</div>
 
