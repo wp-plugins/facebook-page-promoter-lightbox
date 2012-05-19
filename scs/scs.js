@@ -1,5 +1,5 @@
 	/* This is basic - uses default settings */
-$j=jQuery.noConflict();
+$j=jQuery;
 
 ;(function($j) {
 	var tmp, loading, overlay, wrap, outer, content, close, title, nav_left, nav_right,

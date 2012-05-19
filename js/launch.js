@@ -1,4 +1,4 @@
-$j=jQuery.noConflict(false);
+$j=jQuery;
 
 $j(document).ready(function(){
 /** lb_l_ret */
