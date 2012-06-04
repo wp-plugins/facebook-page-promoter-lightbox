@@ -35,9 +35,12 @@ All your visitors should know about your facebook page and tell their friends. W
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page. Configure the plugin under the menu 'Arevico Settings'.
 
-Navigate to the wp-settings tab and set your preferences.
+Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups.
 
 == Frequently Asked Questions ==
+
+**Q. I get an error: invalid profile href **
+A. Make sure that you have configured the plugin, inserted your fanpage ID and cleared the cache of any caching plugin you use.
 
 **Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
 A. While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
