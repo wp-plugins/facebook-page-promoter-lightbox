@@ -101,7 +101,7 @@ function __construct(){
 	  <h2>General Options</h2>
 				<table class="form-table">
 				<tr valign="top"><th scope="row">Facebook Fan Page Numeric ID: <sup><a href="http://arevico.com/retrieving-the-facebook-fanpage-id/">(?)</a></sup></th>
-					<td><input type="text" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" /></td>
+					<td><input type="text" placeholder="for example: 287663154583826" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" /></td>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Show on:</th>
@@ -121,7 +121,7 @@ function __construct(){
 					<td><input type="text" name="<?php echo($this->option_name); ?>[delay]" value="<?php echo $options['delay']; ?>" /></td>
 				</tr>
 
-				<tr valign="top"><th scope="row">Disable Fancybox (don't check unless sure)</th>
+				<tr valign="top"><th scope="row">Disable Fancybox (<strong>don't check</strong>)</th>
 					<td>
 					<input name="<?php echo($this->option_name); ?>[fancybox]" type="checkbox" value="1" <?php checked('1', $options['fancybox']); ?> />
 					</td>
