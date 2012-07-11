@@ -81,7 +81,7 @@ function __construct(){
 <div class="wrap">
 		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
 		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u>
-		Or read the f.a.q<a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q</a>
+		<br /><br />read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q</a> 
 		</div>
 		
 	<?php if( isset($_GET['settings-updated']) ) { ?>
