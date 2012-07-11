@@ -123,7 +123,7 @@ function __construct(){
 
 		<span class="lblwide ilb"><b>Delay in ms:</b> </span>
 		<span class="lblmiddle ilb">
-		<input type="text" style="width:50px;" name="<?php echo($this->option_name); ?>[show_once]" value="<?php echo $options['show_once']; ?>" />
+		<input type="text" style="width:50px;" name="<?php echo($this->option_name); ?>[delay]" value="<?php echo $options['delay']; ?>" />
 		</span><br />
 
 
