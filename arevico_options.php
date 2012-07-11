@@ -54,11 +54,11 @@ function __construct(){
 		global $current_loc;
 		register_setting( $this->option_group, $this->option_name, array(&$this,'options_val'));
 
-		wp_register_style('simple_tabsjs', $current_loc . 'css/tabber.css');
-		wp_enqueue_style( 'simple_tabsjs');
+		wp_register_style('arevico-tabs-css', plugins_url("admin/style.css",__FILE__));
+		wp_enqueue_style( 'arevico-tabs-css');
 
-		wp_register_script( 'simple_tabscss', $current_loc . "js/tabber-minimized.js");
-		wp_enqueue_script(  'simple_tabscss' );
+		wp_register_script( 'arevico-tabs', plugins_url("admin/tabs.js",__FILE__));
+		wp_enqueue_script(  'arevico-tabs' );
 	}
 
 
@@ -78,67 +78,76 @@ function __construct(){
 	}
 	function options_do_page() {
 ?>
-	<div class="wrap">
+<div class="wrap">
+		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
+		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u>
+		Or read the f.a.q<a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q</a>
+		</div>
+		
 	<?php if( isset($_GET['settings-updated']) ) { ?>
     <div id="message" class="updated">
         <p><strong><?php _e('Settings saved.') ?></strong></p>
     </div>
 	<?php } ?>
 
-		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u></div>
-		<a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q</a>
-		</div>
 
-	<h2>Options</h2>
-		
+	<div id="icon-options-general" class="icon32"><br /></div><h2>Options</h2><br />
+
 		<form method="post" action="options.php" id="fl">
 		<?php settings_fields($this->option_group); ?>
 		<?php $options=$this->getOption(); ?>
 
-		<div class="tabber">
-	    <div class="tabbertab">
-	  <h2>General Options</h2>
-				<table class="form-table">
-				<tr valign="top"><th scope="row">Facebook Fan Page Numeric ID: <sup><a href="http://arevico.com/retrieving-the-facebook-fanpage-id/">(?)</a></sup></th>
-					<td><input type="text" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" /></td>
-					</td>
-				</tr>
-				<tr valign="top"><th scope="row">Show on:</th>
-					<td>
-					<input name="<?php echo($this->option_name); ?>[display_on_page]" type="checkbox" value="1" <?php checked('1', $options['display_on_page']); ?> /> On Page &nbsp;&nbsp;&nbsp;&nbsp;
-					<input name="<?php echo($this->option_name); ?>[display_on_post]" type="checkbox" value="1" <?php checked('1', $options['display_on_post']); ?> /> On Post &nbsp;&nbsp;&nbsp;&nbsp;
-					<input name="<?php echo($this->option_name); ?>[display_on_homepage]" type="checkbox" value="1" <?php checked('1', $options['display_on_homepage']); ?> /> On HomePage &nbsp;&nbsp;&nbsp;&nbsp;
-					<input name="<?php echo($this->option_name); ?>[display_on_archive]" type="checkbox" value="1" <?php checked('1', $options['display_on_archive']); ?> /> On Archive's &nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="tabbed">
+			<div class="slheadcontainer"><a class="sltabhead">1: General Options</a>
+		</div>
+		<!-- 1: General Options -->
+		<div class="sltab">
+		<span class="lblwide ilb"><b>Facebook fan page numeric ID: <sup><a href="http://arevico.com/retrieving-the-facebook-fanpage-id/">(?)</a></b> </span>
+		<span class="lblmiddle ilb">
+			<input type="text" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" /> e.g: 287663154583826
+		</span><br /><br />
 
-					</td>
-				</tr>
-				<tr valign="top"><th scope="row">Show Once Every x days (0 = on each pageload):</th>
-					<td><input type="text" name="<?php echo($this->option_name); ?>[show_once]" value="<?php echo $options['show_once']; ?>" /></td>
-				</tr>
+		<span class="lblwide ilb"><b>Show on</b></span>
+		<span class="lblmiddle ilb">
+			<input name="<?php echo($this->option_name); ?>[display_on_page]" type="checkbox" value="1" <?php checked('1', $options['display_on_page']); ?> /><span class="chklbl"> On Page</span>
+			<input name="<?php echo($this->option_name); ?>[display_on_post]" type="checkbox" value="1" <?php checked('1', $options['display_on_post']); ?> /> <span class="chklbl">On Post</span>
+			<input name="<?php echo($this->option_name); ?>[display_on_homepage]" type="checkbox" value="1" <?php checked('1', $options['display_on_homepage']); ?> /><span class="chklbl"> On HomePage</span>
+			<input name="<?php echo($this->option_name); ?>[display_on_archive]" type="checkbox" value="1" <?php checked('1', $options['display_on_archive']); ?> /> On Archives;
+		</span><br /><br />
 
-				<tr valign="top"><th scope="row">Delay (miliseconds):</th>
-					<td><input type="text" name="<?php echo($this->option_name); ?>[delay]" value="<?php echo $options['delay']; ?>" /></td>
-				</tr>
+	
+		<span class="lblwide ilb"><b>Show every x days:</b> </span>
+		<span class="lblmiddle ilb">
+		<input type="text" style="width:50px;" name="<?php echo($this->option_name); ?>[show_once]" value="<?php echo $options['show_once']; ?>" /> 0 is on each pageload
+		</span><br /><br />
 
-				<tr valign="top"><th scope="row">Disable Fancybox (<strong>don't check</strong>)</th>
-					<td>
-					<input name="<?php echo($this->option_name); ?>[fancybox]" type="checkbox" value="1" <?php checked('1', $options['fancybox']); ?> />
-					</td>
-				</tr>
+		<span class="lblwide ilb"><b>Delay in ms:</b> </span>
+		<span class="lblmiddle ilb">
+		<input type="text" style="width:50px;" name="<?php echo($this->option_name); ?>[show_once]" value="<?php echo $options['show_once']; ?>" />
+		</span><br />
 
-			</table>
-     </div>
+
+
+		<span class="lblwide ilb">Disable Fancybox Load (only in conflict)</span>
+		<span class="lblmiddle ilb">
+			<input name="<?php echo($this->option_name); ?>[fancybox]" type="checkbox" value="1" <?php checked('1', $options['fancybox']); ?> /> Not sure? Don't check!		
+		</span>
+	
+		</div>
+
+<div class="slheadcontainer"></div>
 </div>
-
-
+	
+		
 		<p class="submit">
-			<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
-
+			<input type="submit" style="margin-left:300px;" class="button-primary" value="<?php _e('Save Changes') ?>" />
 			</p>
 
 		</form>
+
+		
 	</div>
+
 	<?php
 }
 

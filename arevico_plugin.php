@@ -8,7 +8,7 @@ class arevico_facebook{
 	}
 
 	function append_javascript(){
-		global $current_loc,$arevico_facebook_opt;
+		global $arevico_facebook_opt;
 		/*======================================================================*/
 		$options=$arevico_facebook_opt->getOption();
 
@@ -18,16 +18,16 @@ class arevico_facebook{
 				if ((isset($options['fancybox'])&& $options['fancybox']=='1')){
 		
 		} else {
-		wp_register_style('arevico_scsfbcss', $current_loc . 'scs/scs.css');
+		wp_register_style('arevico_scsfbcss',    plugins_url( 'scs/scs.css',__FILE__));
 		wp_enqueue_style( 'arevico_scsfbcss'); 
 
-		wp_register_script('arevico_scsfb',$current_loc . 'scs/scs.js');
+		wp_register_script('arevico_scsfb', plugins_url( 'scs/scs.js',__FILE__));
 		wp_enqueue_script ('arevico_scsfb');
 	}
 
 		/*=======================================================================*/
 
-		wp_register_script('arevico_scsfb_launch', $current_loc . 'js/launch.js');
+		wp_register_script('arevico_scsfb_launch',  plugins_url( 'js/launch.js',__FILE__));
 		wp_enqueue_script ('arevico_scsfb_launch');
 
 		wp_localize_script('arevico_scsfb_launch','lb_l_ret',$options);
