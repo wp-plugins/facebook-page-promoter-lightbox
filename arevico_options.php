@@ -53,12 +53,14 @@ function __construct(){
 	function options_init(){
 		global $current_loc;
 		register_setting( $this->option_group, $this->option_name, array(&$this,'options_val'));
+				if (isset($_GET['page']) && strtolower($_GET['page'])=='arv_fb'){
 
 		wp_register_style('arevico-tabs-css', plugins_url("admin/style.css",__FILE__));
 		wp_enqueue_style( 'arevico-tabs-css');
 
 		wp_register_script( 'arevico-tabs', plugins_url("admin/tabs.js",__FILE__));
 		wp_enqueue_script(  'arevico-tabs' );
+		}
 	}
 
 
