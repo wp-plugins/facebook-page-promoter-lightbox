@@ -82,6 +82,11 @@ A. This issue can be caused in internet explorere when your theme doesn't have a
 **Q. Youtube videos show trough the lightbox?**
 A. To fix this issue, set the wmode=transparent parameter to the youtube embed url!
 
+
+**Q. How to get support? **
+A. First, read this F.A.Q. Generally, emails are answered faster than forum threads.
+
+
 == Changelog ==
 
 = Version 2.5.3 =
