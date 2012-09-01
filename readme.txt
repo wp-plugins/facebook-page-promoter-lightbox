@@ -40,15 +40,19 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 == Frequently Asked Questions ==
 
 **Q. Do I need to check don't load fancybox? **
+
 A. Probably not! In most cases you only need to check this if instructed by support (e.g: when a conflict with another sort of lightbox exists).
 
 **Q. I get an error: invalid profile href **
+
 A. Make sure that you have configured the plugin, inserted your fanpage ID and cleared the cache of any caching plugin you use.
 
 **Q. How do I avoid conflict with other facebook plugins? **
+
 A. Make sure that each plugin uses the same api key. If possible and other social plugins don't need to use xfbml functionality, make sure to load the iframe version.
 
 **Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
+
 A. While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
 
 **Q. How to obtain my Facebook FanPage ID?:**
@@ -86,6 +90,8 @@ A. To fix this issue, set the wmode=transparent parameter to the youtube embed u
 **Q. How to get support? **
 A. First, read this F.A.Q. Generally, emails are answered faster than forum threads.
 
+**Q. Only the general settings appear, style and advanced don't? **
+A. That's right, those are part of the premium version. Make sure you remove this version first before installing the premium version.
 
 == Changelog ==
 
