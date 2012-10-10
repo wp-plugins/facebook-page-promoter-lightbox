@@ -81,7 +81,7 @@ A. Make sure your theme's css hasn't set the 'position:relative;' attribute to t
 
 **Q. The Overlay doesn't dispay or is pushed to the bottom of the page?.**
 
-A. This issue can be caused in internet explorere when your theme doesn't have a valid doctype. Set the doctype in your theme and it should work.
+A. This issue can be caused in internet explorer when your theme doesn't have a valid doctype. Set the doctype in your theme or ask the developer/designer to do it and it should work.
 
 **Q. Youtube videos show trough the lightbox?**
 A. To fix this issue, set the wmode=transparent parameter to the youtube embed url!
@@ -90,7 +90,7 @@ A. To fix this issue, set the wmode=transparent parameter to the youtube embed u
 **Q. How to get support? **
 A. First, read this F.A.Q. Generally, emails are answered faster than forum threads.
 
-**Q. I come up with a great feature , what to do? **
+**Q. I come up with a great feature , what should i do? **
 A. email us at feedback@arevico.com .
 
 **Q. Only the general settings appear, style and advanced don't? **
