@@ -23,8 +23,10 @@ All your visitors should know about your facebook page and tell their friends. W
 
 **Requirements:**
 
-* PHP 5
+* PHP 5 or higher
 * Facebook Fanpage
+* Javascript enabled
+
 == Screenshots ==
 1. The plugin in action.
 2. The plugin in action.
