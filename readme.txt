@@ -37,7 +37,7 @@ All your visitors should know about your facebook page and tell their friends. W
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page. Configure the plugin under the menu 'Arevico Settings'.
 
-Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups.
+Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
 == Frequently Asked Questions ==
 
@@ -59,7 +59,7 @@ A. While using facebook as a page, you can't use any social plugins. To do this,
 
 **Q. How to obtain my Facebook FanPage ID?:**
 
-A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id   
+A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id. An tool which uses the graph api to retrieve it automatically, is also included.
 
 **Q. It conflict with other social plugins? how can I fix it?:**
 
