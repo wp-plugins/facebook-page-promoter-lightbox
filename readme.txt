@@ -98,7 +98,11 @@ A. email us at feedback@arevico.com .
 **Q. Only the general settings appear, style and advanced don't? **
 A. That's right, those are part of the premium version. Make sure you remove this version first before installing the premium version.
 
-== Changelog ==
+**Q. What are some good settings? **
+
+A. A delay of 5000-10000 secoournds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
+
+== Changelog ==of
 
 = Version 2.5.3 =
 Added support for archive pages.
