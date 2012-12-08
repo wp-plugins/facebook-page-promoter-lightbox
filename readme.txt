@@ -3,7 +3,7 @@ Contributors: Arevico
 Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 2.5.5
+Stable tag: 2.5.6
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
