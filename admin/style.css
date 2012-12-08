@@ -1,0 +1,138 @@
+.vertal td{
+	vertical-align:top;
+}
+.vertal th{
+background-color:#D7F2FF ;
+padding: 5px 20px 5px 20px;
+font-size:10pt;
+}
+
+.chklbl{
+display:inline-block;
+width:100px;
+}
+
+.templatead{
+	display:none;
+	color:red;
+}
+
+
+.dispin{
+display:inline-block;
+width:180px;
+}
+
+
+.pcttext{
+	width:50px;
+}
+.sltab{
+}.sltab{
+display:none;
+ 
+}
+
+.sltabhead{
+    padding-right:10px;
+        cursor: default;
+}
+
+.slactive{
+
+    border-bottom:2px solid blue;
+    color: #000000;
+}
+.slheadcontainer{
+	border-bottom:1px solid #B0C8D7;
+	font-size:14pt;
+	padding-bottom:4px;
+}
+
+.sltab{
+      white-space: nowrap;
+	padding-top:10px;
+}
+/**========== OPTIONS ==============
+* this should be in a seperate css files, but to reduce
+* # of request we combined it.
+*/
+
+.ilb{ /* Inline Block Cross Browser */
+	display: -moz-inline-stack;
+    display: inline-block;
+    margin-bottom:5px;
+}
+
+
+.lblwide
+{
+   white-space:normal;
+    width:200px;
+	text-align:right;
+	vertical-align:top;
+	padding-right:5px;
+}
+.lblmiddle{
+ white-space: nowrap;
+ vertical-align:top;
+ padding-left:30px;
+}
+.sltab input[type="text"]{
+	width:190px;
+}
+.sltab input[type="select"]{
+  vertical-align:top;
+}
+
+.sltab textarea{
+  width:500px;
+  height:100px;
+}
+
+.val-glowblue{
+  border:1px solid #fafafa;
+  -webkit-box-shadow:0 0 2px #007eff;
+  -moz-box-shadow:0 0 2px #007eff;
+  box-shadow:0 0 2px #007eff;
+  outline: none;
+  border-color:#ffffff;
+}
+.val-glowgreen{
+  border:1px solid green;
+  -webkit-box-shadow:0 0 2px green;
+  -moz-box-shadow:0 0 2px green;
+  box-shadow:0 0 2px green;
+  outline: none;
+}
+.val-glowred{
+ background:blue;
+  border:1px solid red;
+  -webkit-box-shadow:0 0 2px red;
+  -moz-box-shadow:0 0 2px red;
+  box-shadow:0 0 2px red;
+  outline: none;
+}
+
+.lblhintok{
+  padding-left:30px;
+  color:green;
+  background:url(tick.png) no-repeat;
+}
+.lblhinterror{
+  padding-left:30px;
+  background:url(cross.png) no-repeat;
+  color:red;
+}
+
+.chklbl{
+display:inline-block;
+width:100px;
+margin-left:5px;
+}
+.lblhint {
+vertical-align:top;
+}
+.aalig a{
+margin-left:20px;
+}
