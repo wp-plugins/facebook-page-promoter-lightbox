@@ -59,7 +59,11 @@ A. While using facebook as a page, you can't use any social plugins. To do this,
 
 **Q. How to obtain my Facebook FanPage ID?:**
 
-A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id. An tool which uses the graph api to retrieve it automatically, is also included.
+A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id. An tool which uses the graph api to retrieve it automatically, is also included. Make sure it is a number. Also make sure that you're fanpage is published and viewable.
+
+**Q. Does this work with community or other types of facebook pages? **
+
+A. While it hasn't been tested as much as with fanpages, I've seen it work on community pages also. Make sure to try it out and ask for support if it doesn't work so we can debug the issue. 
 
 **Q. It conflict with other social plugins? how can I fix it?:**
 

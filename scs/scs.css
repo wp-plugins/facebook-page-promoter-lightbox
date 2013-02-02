@@ -15,6 +15,15 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 
+/* added to reset websites with other box sizings*/
+html #fancybox-wrap {
+      -moz-box-sizing: content-box;
+}
+
+html #fancybox-wrap *{
+      -moz-box-sizing: content-box;
+}
+
 #fancybox-loading {
 	position: fixed;
 	top: 50%;
