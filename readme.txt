@@ -1,9 +1,9 @@
 ﻿=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
-Tags: facebook,twitter,post,plugin,lightbox,fancybox,social media,seo
+Tags: facebook,post,plugin,lightbox,fancybox,social media,seo
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 2.5.6
+Stable tag: 2.5.7
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
@@ -106,7 +106,10 @@ A. That's right, those are part of the premium version. Make sure you remove thi
 
 A. A delay of 5000-10000 secoournds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
-== Changelog ==of
+== Changelog ==
+
+= Version 2.5.7 =
+Fixes layout bugs of option page, commited box sizing layout issues (theme compatibility)
 
 = Version 2.5.3 =
 Added support for archive pages.

@@ -82,8 +82,8 @@ function __construct(){
 ?>
 <div class="wrap">
 		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u>
-		<br /><br />read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q</a> 
+		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;" target="_blank">Check Out what the Premium Version has to offer!</a></u>
+		<br /><br />Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q,or send us an email if you need support.</a> 
 		</div>
 		
 	<?php if( isset($_GET['settings-updated']) ) { ?>
@@ -142,7 +142,7 @@ function __construct(){
 	
 		
 		<p class="submit">
-			<input type="submit" style="margin-left:300px;" class="button-primary" value="<?php _e('Save Changes') ?>" />
+			<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 			</p>
 
 		</form>
