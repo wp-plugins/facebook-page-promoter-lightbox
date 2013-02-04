@@ -12,7 +12,7 @@ $j=jQuery;
 
 		titleHeight = 0, titleStr = '', start_pos, final_pos, busy = false, fx = $j.extend($j('<div/>')[0], { prop: 0 }),
 
-		isIE6 = $j.browser.msie && $j.browser.version < 7 && !window.XMLHttpRequest,
+		isIE6 = false,
 
 		/*
 		 * Private methods 
