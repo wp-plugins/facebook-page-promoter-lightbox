@@ -49,7 +49,7 @@ A. Probably not! In most cases you only need to check this if instructed by supp
 
 A. Make sure that you have configured the plugin, inserted your fanpage ID and cleared the cache of any caching plugin you use.
 
-**Q. How do I avoid conflict with other facebook plugins? **
+**Q. How do I avoid conflict with other facebook plugins?**
 
 A. Make sure that each plugin uses the same api key. If possible and other social plugins don't need to use xfbml functionality, make sure to load the iframe version.
 
@@ -57,21 +57,21 @@ A. Make sure that each plugin uses the same api key. If possible and other socia
 
 A. While using facebook as a page, you can't use any social plugins. To do this, please go to facebook.com and use facebook as a personal account.
 
-**Q. How to obtain my Facebook FanPage ID?:**
+**Q. How to obtain my Facebook FanPage ID?**
 
 A. <a href=\"http://arevico.com/retrieving-the-facebook-fanpage-id/\">*http://arevico.com/retrieving-the-facebook-fanpage-id/*</a> has good instruction on how to get the fanpage id. An tool which uses the graph api to retrieve it automatically, is also included. Make sure it is a number. Also make sure that you're fanpage is published and viewable.
 
-**Q. Does this work with community or other types of facebook pages? **
+**Q. Does this work with community or other types of facebook pages?**
 
 A. While it hasn't been tested as much as with fanpages, I've seen it work on community pages also. Make sure to try it out and ask for support if it doesn't work so we can debug the issue. 
 
-**Q. It conflict with other social plugins? how can I fix it?:**
+**Q. It conflict with other social plugins? how can I fix it?**
 
 A. Make sure that other social plugins use the iframe version. If you need the xfbml make sure, that you aways specify the application/api Key and use only one per page!
 
 **Q. I'm getting error: Could not retrieve id for the specified page. Please verify correct href was passed in.**
 
-A. This plugins only works with facebook Fan pages, make sure to put in the numeric id of your Facebook Fanpage.
+A. This plugin only works with facebook Pages(either fan or community), make sure to put in the numeric id of your Facebook Fanpage.
 
 **Q. The close button doesn't appear?.**
 
@@ -85,7 +85,7 @@ A. All major browser except IE7/IE6. Tested in google chrome, internet explorer 
 
 A. Make sure your theme's css hasn't set the 'position:relative;' attribute to the body element
 
-**Q. The Overlay doesn't dispay or is pushed to the bottom of the page?.**
+**Q. The Overlay doesn't dispay or is pushed to the bottom of the page?**
 
 A. This issue can be caused in internet explorer when your theme doesn't have a valid doctype. Set the doctype in your theme or ask the developer/designer to do it and it should work.
 
