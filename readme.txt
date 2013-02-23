@@ -41,6 +41,7 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 
 == Frequently Asked Questions ==
 
+
 **Q. Do I need to check don't load fancybox? **
 
 A. Probably not! In most cases you only need to check this if instructed by support (e.g: when a conflict with another sort of lightbox exists).
@@ -104,7 +105,18 @@ A. That's right, those are part of the premium version. Make sure you remove thi
 
 **Q. What are some good settings? **
 
-A. A delay of 5000-10000 secoournds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
+A. A delay of 5000-10000 seconds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
+
+
+**Q. The outlines of the box are visible? **
+
+A. The issue is that your theme applies a different box-sizing model to all elements. Apply the CSS box-sizing:content-box; to the elements of the lightbox,
+
+
+
+**Q. Can I not show the plugin for mobile users? **
+
+A. We believe that a responsive theme should be used for mobile users, or a different plugin which handles all that. However, we included this feature in the premium version because lots of people asked for it.
 
 == Changelog ==
 
