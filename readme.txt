@@ -42,11 +42,11 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 == Frequently Asked Questions ==
 
 
-**Q. Do I need to check don't load fancybox? **
+**Q. Do I need to check don't load fancybox?**
 
 A. Probably not! In most cases you only need to check this if instructed by support (e.g: when a conflict with another sort of lightbox exists).
 
-**Q. I get an error: invalid profile href **
+**Q. I get an error: invalid profile href?**
 
 A. Make sure that you have configured the plugin, inserted your fanpage ID and cleared the cache of any caching plugin you use.
 
@@ -91,32 +91,34 @@ A. Make sure your theme's css hasn't set the 'position:relative;' attribute to t
 A. This issue can be caused in internet explorer when your theme doesn't have a valid doctype. Set the doctype in your theme or ask the developer/designer to do it and it should work.
 
 **Q. Youtube videos show trough the lightbox?**
+
 A. To fix this issue, set the wmode=transparent parameter to the youtube embed url!
 
 
-**Q. How to get support? **
+**Q. How to get support?**
+
 A. First, read this F.A.Q. Generally, emails are answered faster than forum threads.
 
-**Q. I come up with a great feature , what should i do? **
+**Q. I come up with a great feature , what should i do?**
+
 A. email us at feedback@arevico.com .
 
-**Q. Only the general settings appear, style and advanced don't? **
+**Q. Only the general settings appear, style and advanced don't?**
+
 A. That's right, those are part of the premium version. Make sure you remove this version first before installing the premium version.
 
-**Q. What are some good settings? **
+**Q. What are some good settings?**
 
 A. A delay of 5000-10000 seconds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
 
-**Q. The outlines of the box are visible? **
-
-A. The issue is that your theme applies a different box-sizing model to all elements. Apply the CSS box-sizing:content-box; to the elements of the lightbox,
-
-
-
-**Q. Can I not show the plugin for mobile users? **
+**Q. Can I not show the plugin for mobile users?**
 
 A. We believe that a responsive theme should be used for mobile users, or a different plugin which handles all that. However, we included this feature in the premium version because lots of people asked for it.
+
+**Q. I'm getting a link asking to 'confirm'my like?**
+
+a. This is caused by facebook (not the plugin) to protect users from like something against their will. Facebook seems to employ this verification against some websites (to my knowledge they don't disclose factors which contribute to that. However, after a undefined period of time, the confirm link will be automatically removed.
 
 == Changelog ==
 
