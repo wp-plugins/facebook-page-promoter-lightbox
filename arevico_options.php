@@ -106,7 +106,7 @@ function __construct(){
 		<div class="sltab">
 		<span class="lblwide ilb"><b>Facebook fan page numeric ID: <sup><a href="http://arevico.com/retrieving-the-facebook-fanpage-id/">(?)</a></b> </span>
 		<span class="lblmiddle ilb">
-			<input type="text" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" /> e.g: 287663154583826
+			<input type="text" name="<?php echo($this->option_name); ?>[fb_id]" value="<?php echo $options['fb_id']; ?>" />
 		</span><br /><br />
 
 		<span class="lblwide ilb"><b>Show on</b></span>
