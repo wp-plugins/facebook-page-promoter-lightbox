@@ -97,7 +97,7 @@ A. To fix this issue, set the wmode=transparent parameter to the youtube embed u
 
 **Q. How to get support?**
 
-A. First, read this F.A.Q. Generally, emails are answered faster than forum threads.
+A. First, read this F.A.Q. Generally, emails are answered faster than forum threads. Which ever support channel you choose, be sure to include enough details so that we can either see the problem live or reproduce the problem locally.
 
 **Q. I come up with a great feature , what should i do?**
 
