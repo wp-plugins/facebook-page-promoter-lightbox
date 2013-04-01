@@ -11,6 +11,7 @@ var $option_name="arv_fb24_opt";
 var $setting_slug="arv_fb";
 var $setting_title="Facebook Lightbox";
 var $menu_title="Facebook Lightbox";
+var $page_title="Settings";
 
 var $can_be_null;
 var $global_slug="arevico_settings";
