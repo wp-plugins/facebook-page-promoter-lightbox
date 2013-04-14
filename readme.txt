@@ -15,7 +15,7 @@ All your visitors should know about your facebook page and tell their friends. W
 
 *   Facebook page is needed
 *   Display the facebook lightbox onload with or without a delay
-*   Limit the lightbox to once every x days per individual visitors 
+*   Limit the lightbox to once every x days per individual visitors
 *   Promote your own facebook fanpage
 *   No api key needed (works with iframe, premium version uses xfbml and requires api key)
 
@@ -40,6 +40,11 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
 == Frequently Asked Questions ==
+
+
+**Q. What are some good settings?**
+
+A. A delay of 5000-10000 seconds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
 
 **Q. Do I need to check don't load fancybox?**
@@ -106,10 +111,6 @@ A. email us at feedback@arevico.com .
 **Q. Only the general settings appear, style and advanced don't?**
 
 A. That's right, those are part of the premium version. Make sure you remove this version first before installing the premium version.
-
-**Q. What are some good settings?**
-
-A. A delay of 5000-10000 seconds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
 
 **Q. Can I not show the plugin for mobile users?**
