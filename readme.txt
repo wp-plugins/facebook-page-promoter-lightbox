@@ -57,7 +57,7 @@ A. Make sure that you have configured the plugin, inserted your fanpage ID and c
 
 **Q. How do I avoid conflict with other facebook plugins?**
 
-A. Make sure that each plugin uses the same api key. If possible and other social plugins don't need to use xfbml functionality, make sure to load the iframe version.
+A. Make sure that each plugin uses the same api key. If possible and other social plugins don't need to use xfbml functionality, make sure to load the iframe version. The premium version has a compatibility mode also.
 
 **Q. The lightbox shows, but it is white. It doesn't contain the likebox?**
 
