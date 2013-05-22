@@ -17,10 +17,12 @@
 
 /* added to reset websites with other box sizings*/
 html #fancybox-wrap {
+	moz-box-sizing: content-box;
       -moz-box-sizing: content-box;
 }
 
 html #fancybox-wrap *{
+	moz-box-sizing: content-box;
       -moz-box-sizing: content-box;
 }
 
