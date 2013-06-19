@@ -20,7 +20,7 @@ function show_facebox(){
 
 $j('body').append(construct_code());
 
-$j('a#inline').fancybox({
+$j('a#inline').arevicofancy({
 	'modal': false,
 	'padding' : 0,
 	'autoDimensions':false,

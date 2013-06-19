@@ -3,7 +3,7 @@ Contributors: Arevico
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 2.5.9
+Stable tag: 2.6.1
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
@@ -122,6 +122,10 @@ A. We believe that a responsive theme should be used for mobile users, or a diff
 a. This is caused by facebook (not the plugin) to protect users from like something against their will. Facebook seems to employ this verification against some websites (to my knowledge they don't disclose factors which contribute to that. However, after a undefined period of time, the confirm link will be automatically removed.
 
 == Changelog ==
+
+
+= Version 2.6.1 =
+Fixed all lightbox conflicts by giving fancybox it's own, seperate namespace. Fixes issues regarding: close buttons, background colors,etc
 
 = Version 2.5.8 =
 Found a bug with the latest jQuery which occurs with some themes. Import update, was missed in the previous one!
