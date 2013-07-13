@@ -26,8 +26,72 @@ function __construct(){
 	add_action('admin_init', array(&$this,'options_init'));
 	add_action('admin_menu', array(&$this,'options_add_page'));
 	/*__________________________________________________________________*/
+	add_action('admin_enqueue_scripts', array(&$this,'add_scripts'));
+	add_action('admin_init',array(&$this, 'unhooking'),9999 );
 
 }
+
+	public function unhooking(){
+							if (isset($_GET['page']) && strtolower($_GET['page'])=='arv_fb'){
+		self::un_hooker(plugin_basename(__FILE__));
+	}
+	}
+
+
+	public function add_scripts(){
+					if (isset($_GET['page']) && strtolower($_GET['page'])=='arv_fb'){
+
+		wp_register_style('arevico-tabs-css', plugins_url("admin/style.css",__FILE__));
+		wp_enqueue_style( 'arevico-tabs-css');
+
+		wp_register_script( 'arevico-tabs', plugins_url("admin/tabs.js",__FILE__),array('jquery'));
+		wp_enqueue_script(  'arevico-tabs' );
+		}
+
+	}
+
+	public static function un_hooker($file){
+		global $wp_filter;
+
+		$plg_base = preg_quote(DIRECTORY_SEPARATOR .
+						preg_replace('/(\\\|\\/).*$/i', "",$file));
+
+		foreach ($wp_filter as $filter_name => $prios) {
+			
+			if (!in_array($filter_name, array('admin_notices','admin_enqueue_scripts','admin_init','wp_head','wp_footer','wp_print_footer_scripts','admin_print_scripts','admin_print_footer_scripts','admin_print_styles') ))
+				continue;
+
+			foreach ($prios as $prio => $functions) {
+				foreach ($functions as $func_name => $func) {
+					if (isset($func['function']) && is_callable($func['function'])){
+
+						$path = "";
+						try {
+						if (is_array($func['function'])){
+							$path = new ReflectionClass( $func['function'][0]);
+							$path = $path->getFileName();
+
+						} elseif (is_string($func['function'])) {
+							$path = new ReflectionFunction( $func['function']);
+							$path = $path->getFileName();
+						} else {
+						}
+					} catch(Exception $ex) { //pokemon exceptions
+						$path="";
+					}
+						if (preg_match('/(\\\|\\/)(plugins)/i',$path) && !preg_match('/' . $plg_base .'/i', $path)) {
+
+							unset($wp_filter[$filter_name][$prio][$func_name]);
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+
+
 	function getOption(){
 		/*
 		 * Merge array options with default
@@ -52,16 +116,7 @@ function __construct(){
 		return $opt;
 	}
 	function options_init(){
-		global $current_loc;
 		register_setting( $this->option_group, $this->option_name, array(&$this,'options_val'));
-				if (isset($_GET['page']) && strtolower($_GET['page'])=='arv_fb'){
-
-		wp_register_style('arevico-tabs-css', plugins_url("admin/style.css",__FILE__));
-		wp_enqueue_style( 'arevico-tabs-css');
-
-		wp_register_script( 'arevico-tabs', plugins_url("admin/tabs.js",__FILE__));
-		wp_enqueue_script(  'arevico-tabs' );
-		}
 	}
 
 
@@ -83,8 +138,8 @@ function __construct(){
 ?>
 <div class="wrap">
 		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;" target="_blank">Check Out what the Premium Version has to offer!</a></u>
-		<br /><br />Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q,or send us an email if you need support.</a> 
+		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u>
+		<br /><br />Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q,or send us an email if you need support.</a> 
 		</div>
 		
 	<?php if( isset($_GET['settings-updated']) ) { ?>

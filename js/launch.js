@@ -1,6 +1,5 @@
-$j=jQuery;
 
-$j(document).ready(function(){
+jQuery(document).ready(function(){
 /** lb_l_ret */
 
 	if (lb_l_ret.show_once>0 && readCookie("arevico_lb")==1)
@@ -18,9 +17,9 @@ function show_facebox(){
 		createCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
 
-$j('body').append(construct_code());
+jQuery('body').append(construct_code());
 
-$j('a#inline').arevicofancy({
+jQuery('a#inline').arevicofancy({
 	'modal': false,
 	'padding' : 0,
 	'autoDimensions':false,
