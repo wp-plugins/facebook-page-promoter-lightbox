@@ -775,7 +775,7 @@
 		}
 
 		$j(this)
-			.data('arevicofancy', $j.extend({}, options, ($j.metadata ? $j(jthis).metadata() : {})))
+			.data('arevicofancy', $j.extend({}, options, ($j.metadata ? $j(this).metadata() : {})))
 			.unbind('click.fb')
 			.bind('click.fb', function(e) {
 				e.preventDefault();

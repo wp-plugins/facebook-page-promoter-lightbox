@@ -27,15 +27,8 @@ function __construct(){
 	add_action('admin_menu', array(&$this,'options_add_page'));
 	/*__________________________________________________________________*/
 	add_action('admin_enqueue_scripts', array(&$this,'add_scripts'));
-	add_action('admin_init',array(&$this, 'unhooking'),9999 );
 
 }
-
-	public function unhooking(){
-							if (isset($_GET['page']) && strtolower($_GET['page'])=='arv_fb'){
-		self::un_hooker(plugin_basename(__FILE__));
-	}
-	}
 
 
 	public function add_scripts(){
@@ -50,46 +43,8 @@ function __construct(){
 
 	}
 
-	public static function un_hooker($file){
-		global $wp_filter;
 
-		$plg_base = preg_quote(DIRECTORY_SEPARATOR .
-						preg_replace('/(\\\|\\/).*$/i', "",$file));
-
-		foreach ($wp_filter as $filter_name => $prios) {
-			
-			if (!in_array($filter_name, array('admin_notices','admin_enqueue_scripts','admin_init','wp_head','wp_footer','wp_print_footer_scripts','admin_print_scripts','admin_print_footer_scripts','admin_print_styles') ))
-				continue;
-
-			foreach ($prios as $prio => $functions) {
-				foreach ($functions as $func_name => $func) {
-					if (isset($func['function']) && is_callable($func['function'])){
-
-						$path = "";
-						try {
-						if (is_array($func['function'])){
-							$path = new ReflectionClass( $func['function'][0]);
-							$path = $path->getFileName();
-
-						} elseif (is_string($func['function'])) {
-							$path = new ReflectionFunction( $func['function']);
-							$path = $path->getFileName();
-						} else {
-						}
-					} catch(Exception $ex) { //pokemon exceptions
-						$path="";
-					}
-						if (preg_match('/(\\\|\\/)(plugins)/i',$path) && !preg_match('/' . $plg_base .'/i', $path)) {
-
-							unset($wp_filter[$filter_name][$prio][$func_name]);
-						}
-
-					}
-				}
-			}
-		}
-
-	}
+	
 
 
 	function getOption(){
