@@ -14,21 +14,21 @@
 </div>
 
 */
-(function ($) {
-	// Here "$" is a jQuery reference
-$(document).ready(function() {
-	$('.tabbed').on('click','.sltabhead',function(e){dothetab(e);});
-	$('.tabbed').each(function(index,elem){elem=$(elem).find('.sltabhead').get(0);dothetab($(elem));});
+(function (jQuery) {
+	// Here "jQuery" is a jQuery reference
+jQuery(document).ready(function() {
+	jQuery('.tabbed').on('click','.sltabhead',function(e){dothetab(e);});
+	jQuery('.tabbed').each(function(index,elem){elem=jQuery(elem).find('.sltabhead').get(0);dothetab(jQuery(elem));});
 });
 
 function dothetab(e){
 	if (e.target==undefined) {
 		ad=e;
 	} else { ad=e.target; }
-	$(ad).addClass('slactive').removeClass('slinactive');
-	var index=$(ad).prevAll('.sltabhead').removeClass('slactive').addClass('slinactive').length;
-	$(ad).closest('.tabbed').find('.sltab').each(function(i,elem){if (i!=index) {$(elem).hide();} else{$(elem).show();}});
-	$(ad).nextAll('.sltabhead').removeClass('slactive').addClass('slinactive');
+	jQuery(ad).addClass('slactive').removeClass('slinactive');
+	var index=jQuery(ad).prevAll('.sltabhead').removeClass('slactive').addClass('slinactive').length;
+	jQuery(ad).closest('.tabbed').find('.sltab').each(function(i,elem){if (i!=index) {jQuery(elem).hide();} else{jQuery(elem).show();}});
+	jQuery(ad).nextAll('.sltabhead').removeClass('slactive').addClass('slinactive');
 
     }
 

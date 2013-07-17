@@ -1,4 +1,5 @@
 
+$jarevico=jQuery;
 jQuery(document).ready(function(){
 /** lb_l_ret */
 
@@ -19,7 +20,7 @@ function show_facebox(){
 
 jQuery('body').append(construct_code());
 
-jQuery('a#inline').arevicofancy({
+$jarevico('a#inline').arevicofancy({
 	'modal': false,
 	'padding' : 0,
 	'autoDimensions':false,

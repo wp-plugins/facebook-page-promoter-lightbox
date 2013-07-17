@@ -111,7 +111,7 @@ function __construct(){
 		<?php $options=$this->getOption(); ?>
 
 		<div class="tabbed">
-			<div class="slheadcontainer"><a class="sltabhead">1: General Options</a>
+			<div class="slheadcontainer"><a class="sltabhead slactive">1: General Options</a>
 		</div>
 		<!-- 1: General Options -->
 		<div class="sltab">

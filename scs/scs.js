@@ -1,6 +1,6 @@
 	/* This is basic - uses default settings */
-
-;(function($j) {
+$jarevico = jQuery;
+(function($j) {
 	var tmp, loading, overlay, wrap, outer, content, close, title, nav_left, nav_right,
 
 		selectedIndex = 0, selectedOpts = {}, selectedArray = [], currentIndex = 0, currentOpts = {}, currentArray = [],
@@ -1138,4 +1138,4 @@
 		$j.arevicofancy.init();
 	});
 
-})(jQuery);
+})($jarevico);
