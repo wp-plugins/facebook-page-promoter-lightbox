@@ -1,0 +1,200 @@
+.vertal td{
+}
+.vertal th{
+background-color:#D7F2FF ;
+padding: 5px 20px 5px 20px;
+font-size:10pt;
+}
+
+.chklbl{
+display:inline-block;
+width:100px;
+}
+
+.templatead{
+  display:none;
+  color:red;
+}
+
+.dispin{
+display:inline-block;
+width:180px;
+}
+
+
+.pcttext{
+  width:50px;
+}
+.sltab{
+}.sltab{
+display:none;
+ 
+}
+
+.sltabhead{
+    padding-right:10px;
+        cursor: default;
+}
+
+.slactive{
+
+    border-bottom:2px solid blue;
+    color: #000000;
+}
+.slheadcontainer{
+  border-bottom:1px solid #B0C8D7;
+  font-size:14pt;
+  padding-bottom:4px;
+}
+
+.sltab{
+      white-space: nowrap;
+  padding-top:10px;
+}
+/**========== OPTIONS ==============
+* this should be in a seperate css files, but to reduce
+* # of request we combined it.
+*/
+
+.ilb{ /* Inline Block Cross Browser */
+  display: -moz-inline-stack;
+    display: inline-block;
+    margin-bottom:5px;
+    vertical-align: middle;
+}
+
+
+.lblwide
+{
+   white-space:normal;
+    width:200px;
+  text-align:right;
+  padding-right:5px;
+}
+.lblmiddle{
+ white-space: nowrap;
+ padding-left:30px;
+}
+.sltab input[type="text"]{
+  width:190px;
+}
+.sltab input[type="select"]{
+}
+
+.sltab textarea{
+  width:500px;
+  height:100px;
+}
+
+.chklbl{
+display:inline-block;
+width:100px;
+margin-left:5px;
+}
+
+.aalig a{
+margin-left:20px;
+}
+
+.wrap input{
+  border-radius:0;
+}
+.wrap select{
+   line-height: 24px;
+
+}
+.chklbl{
+  display:inline-block;
+  width:100px;
+}
+/*===========*/
+.wrap{
+
+
+}
+ .wrap{
+  font-size: 14px;
+   font-family: "Segoe UI","Segoe UI Web Regular","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
+}
+.wrap input[type="text"],.wrap textarea,.wrap select{
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    color: #212121;
+    font-family: "Segoe UI","Segoe UI Web Regular","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
+    font-size: 16px;
+    line-height: 24px;
+}
+.wrap input[type="checkbox"]{
+}
+.wrap input[type="text"]:focus,.wrap textarea:focus,.wrap select:focus{
+    border-color: rgba(0, 0, 0, 0.64);
+    outline: medium none;
+}
+
+.wrap .checkbox{
+  float:left;
+  width:1.466em ;
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    color: #212121;
+    font-family: "Segoe UI","Segoe UI Web Regular","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
+    font-size: 100%;
+    padding: 4px 8px;
+    height: 24px;
+}
+
+.wrap .labelleft,.optionright{
+   float:left;
+   line-height:24px;
+}
+.wrap .labelleft{
+    line-height: 24px;
+    font-size:16px;
+    text-align: right;
+    width:200px;
+    padding:5px 20px 0 0;
+    height: 24px;
+}
+.wrap .cb{
+  clear:both;
+}
+
+.wrap .tile{
+  cursor:pointer;
+  color:white;
+  display:inline-block;
+  line-height: 24px;
+  padding:5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
+  -moz-opacity: 0.75;         /* Mozilla extension */
+  -khtml-opacity:0.75;        /* Konqueror extension (Safari 1.1)*/
+  opacity: 0.75;              /* the correct CSS3 syntax */
+}
+.wrap .tile:hover{
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  -moz-opacity: 1;         /* Mozilla extension */
+  -khtml-opacity:1;        /* Konqueror extension (Safari 1.1)*/
+  opacity: 1;              /* the correct CSS3 syntax */
+  opacity:1;
+}
+
+.wrap .msubmit:hover{
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+
+  -moz-opacity: 1;         /* Mozilla extension */
+  -khtml-opacity:1;        /* Konqueror extension (Safari 1.1)*/
+  opacity: 1;              /* the correct CSS3 syntax */
+  opacity:1;
+}
+
+.wrap .msubmit{
+  float:right;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
+  -moz-opacity: 0.75;         /* Mozilla extension */
+  -khtml-opacity:0.75;        /* Konqueror extension (Safari 1.1)*/
+  opacity: 0.75;              /* the correct CSS3 syntax */
+  text-align: center;
+  color:#ffffff;
+  font-size:14px;
+  background-color: #1BA1E2;
+  padding: 5px;
+  border:solid 0;
+}
