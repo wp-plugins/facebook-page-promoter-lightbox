@@ -24,7 +24,7 @@ All your visitors should know about your facebook page and tell their friends. W
 **Requirements:**
 
 * PHP 5 or higher
-* Facebook Fanpage
+* Facebook Fanpage or Group
 * Javascript enabled
 
 == Screenshots ==

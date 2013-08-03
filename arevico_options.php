@@ -93,13 +93,12 @@ function __construct(){
 ?>
 <div class="wrap">
 		<div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;">
-		<a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Check Out what the Premium Version has to offer!</a></u>
-		<br /><br />Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q,or send us an email if you need support.</a> 
-		</div>
+		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" style="text-decoration:underline;">Premium Version</a> for more options! Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/">F.A.Q.</a> for questions.
+			</div>
 		
 	<?php if( isset($_GET['settings-updated']) ) { ?>
-    <div id="message" class="updated">
-        <p><strong><?php _e('Settings saved.') ?></strong></p>
+    <div style="background: #F2F3F6;border: 1px solid #7E8AA2; margin:0;padding: 10px;margin-top:10px;">
+        <strong><?php _e('Settings saved.') ?></strong>
     </div>
 	<?php } ?>
 
