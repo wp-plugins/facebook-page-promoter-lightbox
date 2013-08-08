@@ -14,7 +14,7 @@ $current_loc = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basen
 require('arevico_options.php');
 require('arevico_plugin.php');
 
-$arevico_facebook_opt=new arevicoco_facebook_opt();
+$arevico_facebook_opt=new arevico_facebook_opt();
 $arevico_facebook=new arevico_facebook(); //TODO: Check if options need to be in the constructor.
 
 ?>
