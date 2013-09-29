@@ -42,9 +42,13 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 == Frequently Asked Questions ==
 
 
+**Q. The lightbox seems to be scrolling out of screen (extends infinitely)**
+
+A. Make sure that your website has a valid doctype. When in doubt it is recommended to use a HTML5 doctype. Open header.php via your theme editor and make sure that the very first line is  <!DOCTYPE html>.
+
 **Q. What are some good settings?**
 
-A. A delay of 5000-10000 seconds is recomended. This way, th user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
+A. A delay of 5000-10000 seconds is recomended. This way, the user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
 
 **Q. Do I need to check don't load fancybox?**
