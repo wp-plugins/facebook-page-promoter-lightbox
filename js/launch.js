@@ -1,5 +1,4 @@
 
-$jarevico=jQuery;
 jQuery(document).ready(function(){
 /** lb_l_ret */
 
