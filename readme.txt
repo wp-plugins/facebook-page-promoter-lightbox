@@ -2,7 +2,7 @@
 Contributors: Arevico 
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.7
 Stable tag: 2.6.5
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
@@ -41,6 +41,9 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 
 == Frequently Asked Questions ==
 
+**Q. The lightbox appears to be blank (white), how to fix this?**
+
+A. Make sure that you've inserted the correct Page ID, also make sure that you're website doesn't have any geographical or age restrictions on it. Facebook can only enforce such restrictions if you are logged in. Non-logged in users will therefore be presented with a white likebox (empty).
 
 **Q. The lightbox seems to be scrolling out of screen (extends infinitely)**
 
