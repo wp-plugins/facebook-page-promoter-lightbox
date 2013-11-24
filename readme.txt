@@ -41,7 +41,8 @@ Navigate to the "Arevico Settings" tab and set your preferences. You will need a
 
 == Frequently Asked Questions ==
 
-**Q. The lightbox appears even tough I already like it. How do I fix this? **
+**Q. The lightbox appears even tough I already like it. How do I fix this?**
+
 We designed the plugin to work on most sites. The reason why we did not include it is, that you'll need a Facebook API Key for it to work. Using a Facebook API key often creates conflict with other social applications. In order to deliver sustainable support , we included that feature in the premium version.
 
 **Q. The lightbox appears to be blank (white), how to fix this?**
