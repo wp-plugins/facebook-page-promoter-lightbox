@@ -1,6 +1,8 @@
-
 jQuery(document).ready(function(){
 /** lb_l_ret */
+
+/* pre-construct code! */
+jQuery('body').append(construct_code());
 
 	if (lb_l_ret.show_once>0 && readCookie("arevico_lb")==1)
 	{
@@ -16,17 +18,15 @@ function show_facebox(){
 	if (lb_l_ret.show_once>0){
 		createCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
-
-jQuery('body').append(construct_code());
-
 $jarevico('a#inline').arevicofancy({
 	'modal': false,
 	'padding' : 0,
 	'autoDimensions':false,
-	'width' : 'auto',
+	'width' : '400',
 	'height': 'auto',
-	'centerOnScroll':true,
-	'hideOnOverlayClick' : false
+	'scrolling'          : 'no',
+	'centerOnScroll' : true,
+	'hideOnOverlayClick' : (lb_l_ret.coc == 1)
 	}).trigger('click');
 }
 
@@ -57,7 +57,7 @@ function readCookie(name) {
  * @return void
  **/
 function construct_code(){
-fbl_otp='<a id="inline" href="#data" style="display: none;">Show</a><div style="display:none"><div id="data" style="overflow:hidden;' + '' + '">';
+fbl_otp='<a id="inline" href="#arvlbdata" style="display: none;">Show</a><div style="display:none"><div id="arvlbdata" style="overflow:hidden;' + '' + '">';
 fbl_otp += '<iframe src="//www.facebook.com/plugins/likebox.php?id=' + lb_l_ret.fb_id +'&amp;width=' + '400' + '&amp;height=' + '255' +'&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:' + '400' + 'px; height:' + '255' + 'px;" allowTransparency="true"></iframe>';
 fbl_otp +='</div></div>';
 return fbl_otp;

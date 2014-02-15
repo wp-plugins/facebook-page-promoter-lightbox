@@ -1,0 +1,213 @@
+/* tabit styles*/
+#arevico-opt-page .slheadcontainer ul{
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+#arevico-opt-page .slheadcontainer li{
+ list-style: none;
+ display:block;
+ float: left;
+ margin-right: 10px;
+ font-size:24px;
+}
+
+
+
+#arevico-opt-page .slheadcontainer li a{
+ color:#a1a1a1;
+ cursor:pointer;
+}
+#arevico-opt-page .slheadcontainer li a:hover{
+  color: #0f364c;
+}
+#arevico-opt-page .slheadcontainer li  .aactive{
+      color: #0f364c;
+
+}
+#arevico-opt-page .tabbed .sltab{
+  display: none;
+}
+
+#arevico-opt-page .tabbed .slactive{
+  display: block;
+}
+
+#arevico-opt-page .arv-cb{
+  clear: both;
+}
+
+/*/tabit styles */
+
+/* ----------------------------------------------- */
+
+/* Admin styles */
+
+#arevico-opt-page .updatesuccess{
+   border: #e6e6e6 1px solid;
+  border-left: 3px solid #0f364c;
+  font-size: 16px;
+  padding:10px;
+  background: white;
+}
+
+#arevico-opt-page .block{
+  font-size: 16px;
+  padding:10px;
+  background: white;
+  margin-bottom: 5px;
+  border: #e6e6e6 1px solid;
+}
+
+#arevico-opt-page .updateerror{
+  border-left: 3px solid #b91d47;
+  font-size: 16px;
+  padding:10px;
+  background: white;
+  color:#b91d47;
+}
+
+html body #arevico-opt-page .error{
+  border: #b91d47 1px solid;
+}
+
+#arevico-opt-page .errorlabel{
+ color:#b91d47;
+ vertical-align: baseline;  
+ margin-left: 10px;
+ line-height: 1.2;
+ display: inline-block;
+}
+
+#arevico-opt-page input[type="text"]:focus, 
+#arevico-opt-page input[type="email"]:focus, 
+#arevico-opt-page input[type="password"]:focus, 
+#arevico-opt-page textarea:focus {
+  border:#0f364c 1px solid;
+}
+
+#arevico-opt-page input[type="text"], 
+#arevico-opt-page input[type="email"], 
+#arevico-opt-page input[type="password"], 
+#arevico-opt-page select, 
+#arevico-opt-page textarea {
+    border: 1px solid #A6A6A6;
+    font-size: 16px;
+    height: 30px;
+    line-height: 1.2;
+    outline: medium none;
+    padding-left: 5px;
+    width: 500px;
+}
+html #arevico-opt-page input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+html #arevico-opt-page .w-small{
+  width: 150px;
+}
+
+#arevico-opt-page .tabbed{
+  font-size:16px;
+  margin-bottom: 10px;
+  white-space: nowrap; 
+}
+
+
+#arevico-opt-page .extrainfo-top{
+  font-style: italic;
+  margin-bottom: 5px;
+}
+#arevico-opt-page .extrainfo-bottom{
+  font-style: italic;
+  margin-top: 5px;
+}
+
+#arevico-opt-page .formlabel {
+    display:inline-block;
+    font-size: 16px;
+    margin-top: 7px;
+    line-height: 1.2;
+    text-align: right;
+    width: 200px;
+    padding-right: 20px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+#arevico-opt-page .form-elem {
+    display:inline-block;
+    clear:both;
+    margin-top: 7px;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+#arevico-opt-page .slheadcontainer{
+}
+
+#arevico-opt-page  .widefat td{
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+#arevico-opt-page  .formtext{
+    line-height: 1.2;
+    vertical-align: top;
+  }
+
+
+#arevico-opt-page input[type="submit"], 
+#arevico-opt-page input[type="button"] {
+    background: none repeat scroll 0 0 #333F4C;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 34px;
+    line-height: 1.2;
+    padding: 0 20px;
+    vertical-align: baseline;
+}
+#arevico-opt-page textarea{
+  vertical-align: top;
+  margin: 0;
+}
+#arevico-opt-page input[type="submit"]:hover, 
+#arevico-opt-page input[type="button"]:hover {
+    background: none repeat scroll 0 0 #002E4C;
+}
+/* /Admin styles */
+
+
+/* plugin specific admin styles */
+#arevico-opt-page .selblock{
+  width: 170px;
+  height: 170px ;
+  float:left;
+  background: #FAFAFA;
+  display: block;
+  margin-right: 10px;
+  position:relative;
+  cursor: pointer;
+}
+
+#arevico-opt-page .selblock:hover{
+  background: #efefef;
+}
+#arevico-opt-page .selblock-last{
+  margin-right: 0;/* negate last block*/
+}
+
+#arevico-opt-page .center-radio{
+    position: absolute;
+    text-align:center;
+    left:0;
+    right:0;
+    bottom:10px;
+}
+
+#arevico-opt-page input[type='checkbox'], #arevico-opt-page input[type='radio']{
+
+}
+/* /plugin specific admin styles*/

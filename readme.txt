@@ -1,9 +1,9 @@
-﻿=== Facebook Page Promoter Lightbox ===
+=== Facebook Page Promoter Lightbox ===
 Contributors: Arevico 
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 2.6.5
+Tested up to: 3.8.1
+Stable tag: 2.6.6
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
@@ -19,7 +19,7 @@ All your visitors should know about your facebook page and tell their friends. W
 *   Promote your own facebook fanpage
 *   No api key needed (works with iframe, premium version uses the api and requires a key)
 
-[youtube http://www.youtube.com/watch?v=0IE4dj8Qoko]
+[youtube http://www.youtube.com/watch?v=zXfNwxBk7pA]
 
 **Requirements:**
 
@@ -133,6 +133,15 @@ A. We believe that a responsive theme should be used for mobile users, or a diff
 a. This is caused by facebook (not the plugin) to protect users from like something against their will. Facebook seems to employ this verification against some websites (to my knowledge they don't disclose factors which contribute to that. However, after a undefined period of time, the confirm link will be automatically removed.
 
 == Changelog ==
+
+= Version 2.6.6 =
+Introduced:
+* New admin UI
+* Hide on overlay click
+
+Bugs fixed:
+* Display on homepage, custom post-types
+* Width and scaling issues
 
 = Version 2.6.4 =
 Reversed assumptions made about dehooking, jQuery scope, refined anti conflict methods (fancybox scope, css specific prefixes etc).
