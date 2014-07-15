@@ -51,10 +51,7 @@ class FFPLBAdmin
 
 	/* = = = = = = = = = = = = = = = = = = THE VIEW PROCEEDS FROM HERE = = = = = = = = = = = = = = = = = = = = = = = = */
 	
-	/*
-	 * Include the right view and render the page
-	 * @require $_GET['page'] != null && $_GET['page'] in $this->loaded_pages
-	 */
+
 	public function do_page(){
 		define('ArevicoFPPLBCONST', '1');
 		$page=$_GET['page'];
