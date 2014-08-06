@@ -2,8 +2,8 @@
 Contributors: Arevico 
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 2.6.6
+Tested up to: 3.9.1
+Stable tag: 2.6.7
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
@@ -57,6 +57,10 @@ A. Make sure that your website has a valid doctype. When in doubt it is recommen
 
 A. A delay of 5000-10000 seconds is recomended. This way, the user has read some of  your content. Furtermore, once in 4 or 7 days is also a good option to not annoy repeat visitors.
 
+
+**Q. Do I need to check don't load fancybox?**
+
+A. Probably not! In most cases you only need to check this if instructed by support (e.g: when a conflict with another sort of lightbox exists).
 
 **Q. I get an error: invalid profile href?**
 

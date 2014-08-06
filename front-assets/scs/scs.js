@@ -339,9 +339,9 @@ $jarevico = jQuery;
 				if (!overlay.is(':visible')) {
 					if (isIE6) {
 						$j('select:not(#arevicofancy-tmp select)').filter(function() {
-							return this.style.visibility !== 'hidden';
+							return this.css('visibility') !== 'hidden';
 						}).css({'visibility' : 'hidden'}).one('arevicofancy-cleanup', function() {
-							this.style.visibility = 'inherit';
+							this.css('visibility','inherit');
 						});
 					}
 
@@ -378,7 +378,7 @@ $jarevico = jQuery;
 
 					content
 						.empty()
-						.removeAttr('filter')
+						.prop('filter',null)
 						.css({
 							'border-width' : currentOpts.padding,
 							'width'	: final_pos.width - currentOpts.padding * 2,
@@ -403,7 +403,7 @@ $jarevico = jQuery;
 				return;
 			}
 
-			wrap.removeAttr("style");
+			wrap.prop("style",null);
 
 			content.css('border-width', currentOpts.padding);
 
@@ -464,7 +464,7 @@ $jarevico = jQuery;
 
 			title
 				.empty()
-				.removeAttr('style')
+				.prop('style',null)
 				.removeClass();
 
 			if (currentOpts.titleShow === false) {
@@ -562,8 +562,8 @@ $jarevico = jQuery;
 
 		_finish = function () {
 			if (!$j.support.opacity) {
-				content.get(0).style.removeAttribute('filter');
-				wrap.get(0).style.removeAttribute('filter');
+				content.first().css('filter',null);
+				wrap.first().css('filter',null);
 			}
 
 			if (selectedOpts.autoDimensions) {
@@ -1060,7 +1060,7 @@ $jarevico = jQuery;
 				if (busy) {
 					e.preventDefault();
 
-				} else if ($j(e.target).get(0).clientHeight == 0 || $j(e.target).get(0).scrollHeight === $j(e.target).get(0).clientHeight) {
+				} else if ($j(e.target).first().clientHeight == 0 || $j(e.target).first().scrollHeight === $j(e.target).first().clientHeight) {
 					e.preventDefault();
 					$j.arevicofancy[ delta > 0 ? 'prev' : 'next']();
 				}
