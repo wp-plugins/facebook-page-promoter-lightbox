@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
 /* pre-construct code! */
 jQuery('body').append(construct_code());
 
-	if (lb_l_ret.show_once>0 && readCookie("arevico_lb")==1)
+	if (lb_l_ret.show_once>0 && arvreadCookie("arevico_lb")==1)
 	{
 
 	} else {
@@ -16,7 +16,7 @@ jQuery('body').append(construct_code());
 
 function show_facebox(){
 	if (lb_l_ret.show_once>0){
-		createCookie("arevico_lb", "1", lb_l_ret.show_once);
+		arvcreateCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
 $jarevico('a#inline').arevicofancy({
 	'modal': false,
@@ -30,7 +30,7 @@ $jarevico('a#inline').arevicofancy({
 	}).trigger('click');
 }
 
-function createCookie(name,value,days) {
+function arvcreateCookie(name,value,days) {
 	if (days) {
 		var date = new Date();
 		date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -40,7 +40,7 @@ function createCookie(name,value,days) {
 	document.cookie = name+"="+value+expires+"; path=/";
 }
 
-function readCookie(name) {
+function arvreadCookie(name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {

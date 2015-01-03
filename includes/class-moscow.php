@@ -1,20 +1,26 @@
 <?php 
-/*
-	SQL Query Abstraction Layer
-	by H.F. Kluitenberg (http://arevico.com/)
-*/
-if (!class_exists("SQA")){
 
-	class SQA
-	{
-
-		public static function first_key(&$arr){
+if (!class_exists('arvlbSQA')){
+class arvlbSQA
+{
+	/**
+	 * Retrieve the first element of an array
+	 * @param array &$arr The array of which the first element is to be retrieved
+	 * @return mixed the first element of an array
+	 */
+	public static function first_key(&$arr){
 			reset($arr);
 			return key($arr);
-		}
+	}
 	/**
 	 * Check if a value is available in the post array And 	
-	 * return or output it encoded 							
+	 * return or output it encoded
+	 * @param string $name the name and subname
+	 * @param array $arr the array to fetch
+	 * @param boolean $echo wether or not to output the current variable
+	 * @param boolean $escape wether or not escaping the output is wished
+	 * @example val::('option[subarray][value]')
+	 * @return string the value						
 	 */
 	public static function val($name,$arr,$echo=false,$escape=true){
 		if (is_null(self::str_arr_val($name,$arr))){
@@ -29,8 +35,9 @@ if (!class_exists("SQA")){
 			 return $final;
 			}
 		}
-		}
+	}
 	
+
 	/**
 	 * Fill an array with an default value if the specified keys don't exists. Especially usefull when
 	 * receives a number of checkboxes from a form submit
@@ -96,8 +103,10 @@ if (!class_exists("SQA")){
 	 * @param arr the array to 
 	 */
 	public static function str_arr_val($name,$arr=null){
-		if ($arr==null)
+		if ($arr===null)
 			$arr=$_POST;
+
+
 		preg_match_all('/\[(.*?)\]/', $name, $matches,  PREG_SET_ORDER );
 
 		if (!empty($matches)){
@@ -147,13 +156,6 @@ if (!class_exists("SQA")){
 	 * 
 	 */
 
-	/**
-	 * Prevent Cross Site Request Forgery
-	 */
-	public static function no_bullshit($nonce=null){
-		check_admin_referer( 'admin_arvs', "arv_nonce" );
-		unset($_POST["arv_nonce"]);
-	}	
 
 	/**
 	 * Get all elements that are present in array1 and not present in array2.
@@ -191,96 +193,11 @@ if (!class_exists("SQA")){
 	}
 
 
-	/**
-	 * DB Delta helper
-	 * @param arr_create the array containing create statement
-	 */
-	/* public static function deltahelper($arr_create){ */
-	/*	* You must put each field on its own line in your SQL statement.
-    	* You must have two spaces between the words PRIMARY KEY and the definition of your primary key.
-    	* You must use the key word KEY rather than its synonym INDEX and you must include at least one KEY.
-    	* You must not use any apostrophes or backticks around field names. 
-    */
-/*    	if (is_string($arr_create))
-    		$arr_create = array($arr_create);
-
-	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-	foreach ($arr_create as $key => $v) {
-		dbDelta( $v );	}
-	}
-*/
 	public static function is_post(){
 		return 	$_SERVER['REQUEST_METHOD']==="POST";
 	}
-	/**
-	 * Some magic isn't wanted!
-	 */
-	public static function remove_quotes(){
-		$_POST      = array_map( 'stripslashes_deep', $_POST );
-    	$_GET       = array_map( 'stripslashes_deep', $_GET );
-    	$_COOKIE    = array_map( 'stripslashes_deep', $_COOKIE );
-    	$_REQUEST   = array_map( 'stripslashes_deep', $_REQUEST );
-	}
-
-	/**
-	* Do multiple delta updates arrays do not need to be odered
-	* @param $table the table to mass update
-	* @param $old an array containing row arrays with all old valuues
-	* @param $new an array containing row arrays with all new values
-	* @param $key an array containg all keys to check on (primary key)
-	*		 Key difference are not included in update checks
-	*/
-	public function mass_delta_update($table,$old,$new,$key,$where=null){
-	
-		foreach ($old as $k => $old_row) {
-			$checkon= self::get_ins_inc($old_row,$key);
-
-			foreach ($new as $nk => $new_row) {
-
-				$m=array_intersect_assoc($checkon, $new_row);
-		
-				if (!empty($m)){
-					self::delta_update($table,$old_row,$new_row,array_keys($m),$key);
-					break;
-
-				}
-				
-			}
-
-		}
-
-	}
 
 
-		/**
-	 * UPDATE a table when two arrays are different
-	 * @param data an array with [0]=>all old data,[1]=>all new data
-	 * @param $current the old row, $new, the new row
-	 * @param $new the new row to be compared with
-	 * @deprecated
-	 * 
-	 */
-	public static function delta_update($table,$current,$new,$where=null){
-		global $wpdb;
-
-		if (is_null($where) ){
-			$where= array_intersect_assoc($current, $new); //TODO:check statement==> elements on which $current and $new agree, can be established as key!
-		} else {
-			$where= self::get_ins_inc($current,$where);
-		}
-		//TODO: handle situation on which there are NO keys and all items need to be updated (even those where in $new and $current agree on)
-		$new 	 = self::get_ins_ex($new,$where);			//prevent keys to be updated
-		$current = self::get_ins_ex($current,$where);	//prevent keys to be updated (and checked upon)
-		
-		$diff = array_diff_assoc($new,$current);
-		if (!empty($diff)){
-			$wpdb->update($table,$new,$where);		
-		}
-	}
-	/**
-	 * Rename an array key, the order of the array in question COULD be changed so it can no longer be considered ordere
-	 * @param $keys an associative array of "oldkey"=>"new_key"
-	 */
 	public static function array_rename_key($array,$keys,$subarray=false){
 		if ($subarray){
 			foreach ($array as $k => &$v) {
@@ -376,8 +293,23 @@ if (!class_exists("SQA")){
 		return $lret;
 	}//end arr_val_map
 
-
-}//end class
-}//end if_defined
+	/**
+	 * Returns the full current url being displayed
+	 * @pure
+	 */
+	public static function getCurrentURL(){
+		$protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') 
+                === FALSE ? 'http' : 'https';
+		$host     = $_SERVER['HTTP_HOST'];
+		$script   = $_SERVER['SCRIPT_NAME'];
+		$params   = $_SERVER['QUERY_STRING'];
+		 
+		$currentUrl = $protocol . '://' . $host . $script . '?' . $params;
+		 
+		return $currentUrl;
+	}
+}
+}
+//end class
 
 ?>

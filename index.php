@@ -1,95 +1,133 @@
 <?php 
 /*
    Plugin Name: Facebook Page Promoter Lightbox
-   Plugin URI:  http://http://wordpress.org/plugins/facebook-page-promoter-lightbox/faq/ 
-   Description:  All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
-   Version: 2.6.7
+   Plugin URI: http://http://wordpress.org/plugins/facebook-page-promoter-lightbox/faq/ 
+   Description: All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
+   Version: 3.0
    Author: Arevico
    Author URI: http://arevico.com/sp-facebook-lightbox-premium/
    Copyright: 2013, Arevico
 */
-if (!class_exists('SQA'))
-		require('includes/moscow.php');
 
-if (!class_exists('FPPLB_SHARED'))
-		require('fpplb-shared.php');
+require(dirname(__FILE__) .'/includes/class-moscow.php');
+require(dirname(__FILE__) .'/class-activate.php');
+
 
 if (is_admin() ){
-	require('opt-admin.php');
-	$FFPLBAdmin = new FFPLBAdmin();
-	
-	
-
-} else{
-	$FPPLB = new FPPLB();
+	require(dirname(__FILE__) .'/admin.php');
+	$arvlbAdmin 		= new arvlbAdmin();
+} else {
+  $arvlbGASuite = new arvlbFPPL();
 }
 
-
-/*
- * The frontend class, processes all output
- * @Author H.F. Kluitenberg (Arevico.com)
+/**
+ * Main plugin class. 
  */
-class FPPLB{
+class arvlbFPPL 
+{
+    private $options = null;
 
-	/* Options retrieved from the database
-	 * @invariant options != null*/
-	protected $options = array();
+    /**
+     * Constructor, initializes options
+     */
+    function __construct(){
+      $this->options = get_option('arv_fb24_opt',arvlbSHARED::getDefaults() );
+      add_action('wp_enqueue_scripts', array($this,'addScript'));
 
-	/*
-	 * The constructor: Add all hooks and filters required
-	 */
-	function __construct(){
-		$this->get_settings();
-		add_action('wp_enqueue_scripts',array($this,'add_assets'));
-	}
+    }
 
-	/*
-	 * Retrieves the required options from the database and sets them
-	 * @ensures $options != null
- 	 * @ensures $options.length >= 0
-	 */
-	public function get_settings(){
-		if (empty($this->options))
-			$this->options = FPPLB_SHARED::normalize_settings(get_option('arv_fb24_opt', FPPLB_SHARED::$default_settings));
-	}
-	
+    /**
+     * Add all scripts required on the front-end
+     */
+    public function addScript(){
+      $o  = $this->options;
 
+    if ((is_front_page()  && !empty($o['display_on_homepage']) )
+      || (is_archive()  && !empty($o['display_on_archive']))
+      || (is_single()   && !empty($o['display_on_post']))
+      || (is_page()     && !empty($o['display_on_page']))
+        ){
 
-	/*
-	 * Add all front-end assets if needed
-	 */
-	public function add_assets(){
-		$o = $this->options;
-		if ((is_front_page() 	&& !empty($o['display_on_homepage']) )
-			|| (is_archive() 	&& !empty($o['display_on_archive']))
-			|| (is_single() 	&& !empty($o['display_on_post']))
-			|| (is_page() 		&& !empty($o['display_on_page']))
-				){
+    
 
-		
+    wp_register_style('arevico_scsfbcss', plugins_url( 'includes/front/scs/scs.css',__FILE__));
+    wp_enqueue_style( 'arevico_scsfbcss'); 
 
-		wp_register_style('arevico_scsfbcss', plugins_url( 'front-assets/scs/scs.css',__FILE__));
-		wp_enqueue_style( 'arevico_scsfbcss'); 
-
-		wp_register_script('arevico_scsfb', plugins_url( 'front-assets/scs/scs.js',__FILE__),array('jquery'));
-		wp_enqueue_script ('arevico_scsfb');
+    wp_register_script('arevico_scsfb', plugins_url( 'includes/front/scs/scs.js',__FILE__),array('jquery'));
+    wp_enqueue_script ('arevico_scsfb');
 
 
-		wp_register_script('arevico_scsfb_launch',  plugins_url( 'front-assets/js/launch.js',__FILE__),array('jquery'));
-		wp_enqueue_script ('arevico_scsfb_launch');
-		wp_localize_script('arevico_scsfb_launch','lb_l_ret',$this->options);
+    wp_register_script('arevico_scsfb_launch',  plugins_url( 'includes/front/js/launch.js',__FILE__),array('jquery'));
+    wp_enqueue_script ('arevico_scsfb_launch');
+    wp_localize_script('arevico_scsfb_launch','lb_l_ret',arvlbSHARED::normalize($o));
 
-		}
-	}
+    }
+  }
 
-	/* Compatibility mode */
-	public function scompat_head(){
-		$o=$this->options;
-			$locale=(empty($o["fblocale"])  ? "en_US": $o["fblocale"] );
-		echo("<meta property=\"fb:app_id\" content=\"{$o["appid"]}\"><script src='//connect.facebook.net/{$locale}/all.js#xfbml=1&amp;appId={$o["appid"]}&amp;version=2.0'></script>
-			<script type=\"javascript\">jQuery(document).ready(function(){window.setTimeout(function(){arevicotest();}, 250);});</script>");
-	}
+  
+ } // end of main plugin class
 
 
- }
+    /**
+     * Function called on activation of the plugin
+     */
+    function arvlb_arv_activate() {
+      arvlbActivate::on_activate();
+    }
+
+    /**
+     * Function called on de-activation of the plugin
+     */    
+    function arvlb_arv_deactivate() {
+      arvlbActivate::on_deactivate();
+    }
+
+  register_activation_hook( __FILE__, 'arvlb_arv_activate' );
+  register_uninstall_hook(__FILE__, 'arvlb_arv_deactivate' );
+    
+    
+
+/**
+ * This class contains shared common properties and/or methods
+ */
+class arvlbSHARED{
+  //Defaults for the option table of this plugin
+  public static $defaults = array (
+  'fb_id'         => '',
+  'delay'         => '2000',
+  'show_once'       => '0',
+  'display_on_homepage'   => '1',
+  'coc'         => '0',
+  'cooc'          => '1'  );
+
+
+  /**
+   * Normalize settings to prevent undefined errors on the front-end
+   */
+  public static function normalize($o){
+    $checks = array(
+      'width'		=> '400',
+      'height'		=> '255',
+      'delay'		=> '0',
+      'coc'         => '0',
+      'fb_id'		=> '' ,
+      'cooc'        => '0'
+    );
+
+    
+
+    return array_merge($checks,$o);
+  }
+
+  
+  public static function getDefaults(){
+    $o = self::$defaults;
+    if (empty($o['install_date']))
+      $o['install_date'] = time();
+
+    return $o;
+  }
+  
+}
+
  ?>

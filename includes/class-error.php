@@ -3,8 +3,7 @@
  * @author H.F. Kluitenberg
  * class to easily faciliate error messaging and alerting
  */
-if (!class_exists('ArvErrorClass')){
-class ArvErrorClass{
+class arvlbErrorClass{
 	protected $messages;
 
 	function __construct(){
@@ -16,12 +15,18 @@ class ArvErrorClass{
 	}
 
 
-	public function ifempty($key,$message,$arr=null){
+	public function ifempty($key,$message,$arr=null,$bind_key=null){
 		if (is_null($arr))
 			$arr=$_POST;
+
+		if (is_null($bind_key))
+			$bind_key = $key;
+
 //		if (!isset($_POST[$key]) || $_POST[$key] === ""  || (is_array($_POST[$key]) && count($_POST[$key])==0)  ){
-		if (SQA::val($key,$arr,false,false)==""){
-			$this->add($key,$message);
+		$val_ex	 = arvlbSQA::val($key,$arr,false,false);		
+
+		if (empty($val_ex)){
+			$this->add($bind_key,$message);
 			return true;
 		}
 		return false;
@@ -36,7 +41,7 @@ class ArvErrorClass{
 
 	public function gen_message($sucess=null,$failure=null){
 
-		if (SQA::is_post() || isset($_GET['settings-updated'] )){
+		if (arvlbSQA::is_post() || isset($_GET['settings-updated'] )){
 
 			if (is_null($sucess))
 				$sucess="Successfully saved!";
@@ -57,8 +62,8 @@ class ArvErrorClass{
 		foreach ($this->messages as $key => $value) {
 			$i++;
 			$value=htmlentities($value);
-			$lret .= "\$(\"*[name='$key']\").after(\"<span id='ar-error-$i' class='errorlabel'>$value</span>\");\r\n";
-			$lret .= "\$(\"*[name='$key']\").addClass('error').blur(function(){\$(this).removeClass(\"error\");$('#ar-error-$i').remove();});\r\n";
+			$lret .= "\$(\"*[name='$key']\").before(\"<span id='ar-error-$i' class='error-label'>$value</span>\");\r\n";
+			$lret .= "\$(\"*[name='$key']\").addClass('error-elem').blur(function(){\$(this).removeClass(\"error-elem\");$('#ar-error-$i').remove();});\r\n";
 		}
 		if ($include_script){
 			echo "<script>(function (\$) {\$(document).ready(function() {{$lret}});})(jQuery);</script>";
@@ -70,5 +75,4 @@ class ArvErrorClass{
 
 	}
 
-}// end class exists check
  ?>
