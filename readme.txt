@@ -18,7 +18,7 @@ This way visitors will always stay up-to-date and you will receive more returnin
 *   Facebook page is needed
 *   Display the facebook lightbox onload with or without a delay
 *   Limit the lightbox to once every x days per individual visitors
-*   Promote your own facebook fanpage
+*   Promote your Facebook Fanpage, leverage current website traffic
 *   No api key needed (works with iframe, premium version uses the api and requires a key)
 
 [youtube http://www.youtube.com/watch?v=zXfNwxBk7pA]
@@ -40,10 +40,6 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
 == Frequently Asked Questions ==
-
-**Q. The lightbox appears even tough I already like it. How do I fix this?**
-
-We designed the plugin to work on most sites. The reason why we did not include it is, that you'll need a Facebook API Key for it to work. Using a Facebook API key often creates conflict with other social applications. In order to deliver sustainable support , we included that feature in the premium version.
 
 **Q. The lightbox appears to be blank (white), how to fix this?**
 
@@ -117,7 +113,11 @@ A. First, read this F.A.Q. Generally, emails are answered faster than forum thre
 
 **Q. I come up with a great feature , what should i do?**
 
-A. email us at feedback@arevico.com .
+A. email us at reply@arevico.com .
+
+**Q. The lightbox appears even tough I already like it. How do I fix this?**
+
+We designed the plugin to work on most sites. The reason why we did not include it is, that you'll need a Facebook API Key for it to work. Using a Facebook API key often creates conflict with other social applications. In order to deliver sustainable support, these more advanced features are included in the premium version.
 
 **Q. Only the general settings appear, style and advanced don't?**
 
