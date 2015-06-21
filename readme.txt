@@ -2,24 +2,22 @@
 Contributors: Arevico 
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 3.0
+Tested up to: 4.2.2
+Stable tag: 3.1
 
-Turn website visitors into Facebook fans. With this plugin you can display a Facebook Fan Page-Like Box inside a lightbox  (overlay).
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
 == Description ==
 
-Turn website visitors into Facebook fans. With this plugin you can display a Facebook Fan Page-Like Box inside a lightbox  (overlay).
-
-This way visitors will always stay up-to-date and you will receive more returning visitors.
+All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox (overlay).
 
 **Features:**
 
 *   Facebook page is needed
 *   Display the facebook lightbox onload with or without a delay
 *   Limit the lightbox to once every x days per individual visitors
-*   Promote your Facebook Fanpage, leverage current website traffic
-*   No api key needed (works with iframe, premium version uses the api and requires a key)
+*   Promote your own facebook fanpage
+*   No api key needed
 
 [youtube http://www.youtube.com/watch?v=zXfNwxBk7pA]
 
@@ -29,17 +27,21 @@ This way visitors will always stay up-to-date and you will receive more returnin
 * Facebook Fanpage or Group
 * Javascript enabled
 
-== Screenshots ==
-1. An example of a Facebook Lightbox.
-2. Configuring the plugin
 
-== Installation ==
+== Screenshots ==
+
+1. The plugin in action.
+2. The option page
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page. Configure the plugin under the menu 'Arevico Settings'.
 
 Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
 == Frequently Asked Questions ==
+
+**Q. The lightbox appears even tough I already like it. How do I fix this?**
+
+We designed the plugin to work on most sites. The reason why we did not include it is, that you'll need a Facebook API Key for it to work. Using a Facebook API key often creates conflict with other social applications. In order to deliver sustainable support , we included that feature in the premium version.
 
 **Q. The lightbox appears to be blank (white), how to fix this?**
 
@@ -113,11 +115,7 @@ A. First, read this F.A.Q. Generally, emails are answered faster than forum thre
 
 **Q. I come up with a great feature , what should i do?**
 
-A. email us at reply@arevico.com .
-
-**Q. The lightbox appears even tough I already like it. How do I fix this?**
-
-We designed the plugin to work on most sites. The reason why we did not include it is, that you'll need a Facebook API Key for it to work. Using a Facebook API key often creates conflict with other social applications. In order to deliver sustainable support, these more advanced features are included in the premium version.
+A. email us at feedback@arevico.com .
 
 **Q. Only the general settings appear, style and advanced don't?**
 
@@ -134,11 +132,6 @@ a. This is caused by facebook (not the plugin) to protect users from like someth
 
 == Changelog ==
 
-= Version 3.0 =
-Introduced:
-* Migrated to new plugin framework
-* Fixed 404 errors on IE <= 8
-
 = Version 2.6.6 =
 Introduced:
 * New admin UI
@@ -147,6 +140,9 @@ Introduced:
 Bugs fixed:
 * Display on homepage, custom post-types
 * Width and scaling issues
+
+= Version 3.1 =
+Updated the plugin for Facebook API v2.3
 
 = Version 2.6.4 =
 Reversed assumptions made about dehooking, jQuery scope, refined anti conflict methods (fancybox scope, css specific prefixes etc).

@@ -29,10 +29,10 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 	<div style="float:left;">
 	<?php 
 	if (  (!empty($o['o'])) && (!empty($o['o']['install_date'])) && (time()-$o['o']['install_date'] > 60 * 60 * 24 * 7)){?>
-		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; Or please <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">rate this plugin.</a>.
+		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox" target="_blank">Love it? Rate us 5 stars.</a>.
 		
 		<?php }else{ ?>
-		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; Read the <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox" target="_blank">F.A.Q.</a> for questions.
+		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q.</a> for questions.
 
 		<?php } ?>
 	</div>
@@ -62,10 +62,10 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
     <div class="onepcssgrid-1000">
 
     	<div class="col3 formlabel">
-    	Numeric Page ID <a style="font-weight:900;" href="http://arevico.com/retrieving-the-facebook-fanpage-id/" target="_blank">[?]</a>
+    	URL To Facebook Page
 		</div>
 		<div class="col6 formselect">
-			<?php $this->getText('o[fb_id]'); ?>
+			<?php $this->getText('o[fb_id]',array('placeholder' => 'http://facebook.com/example') ); ?>
 		</div>
 		<div class="col3 last">&nbsp;</div>
 		<div class="col12 last">&nbsp;</div>
@@ -111,6 +111,8 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 		<div class="col3 formlabel">Overlay Click</div>
 		<div class="col9 last formselect"><?php $this->getCheckbox('o[coc]') ?> Close on overlay click</div>
 
+		<div class="col12 last">&nbsp;</div>
+
 		<div class="col3 formlabel">Submenu</div>
 		<div class="col9 formselect last"><?php $this->getCheckbox('o[submenu]'); ?> Show this menu under 'Settings'</div>
 
@@ -125,7 +127,9 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 </div>
 
 <div class="onepcssgrid-1000">
-	<div class="col4 last"><input class="add-new-h2" style="width:100%;height:35px;" type="submit" value="  Save  "/>
+	<div class="col3 formlabel">&nbsp;</div>
+	<div class="col4"><input class="add-new-h2" style="width:100%;height:35px;" type="submit" value="  Save  "/>
+	<div class="col5 last">&nbsp;</div>
 </div>
  
  </div>

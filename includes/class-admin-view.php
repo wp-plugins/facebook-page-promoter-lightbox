@@ -107,7 +107,7 @@ abstract class arvlbAdminView
 
 
 	/**
-	 * Fill in a generic option template, template to be supplied
+	 * Description
 	 * @param string $template The template to be filled in 
 	 * @param string $name The name of the associated option
 	 * @param array $attr 
@@ -154,10 +154,7 @@ abstract class  arvlbAdminViewSimple  extends arvlbAdminView{
 	protected $option_name  = '';
 	protected $default 		= array();
 
-	/**
-	 *  This function processes an request to a specific admin page. It differentations
-	 * between an update request (post) and retrieval of the admin page
-	 */
+
 	public function process_request(){
 		if (arvlbSQA::is_POST()){
 			$this->options = $_POST;
@@ -167,16 +164,10 @@ abstract class  arvlbAdminViewSimple  extends arvlbAdminView{
 		}
 	}
 
-	/**
-	 * Fetches the options associated with this specific admin page
-	 */
 	private function fetch(){
 		return array('o'=>get_option($this->option_name,$this->default));
 	}
 
-	/**
-	 * Write the options to the database
-	 */
 	public function save(){
 		if (isset($_POST['o']) && (!empty($this->option_name)) && (!$this->err->has_error()) && wp_verify_nonce($_POST['arvlb-update-forms']) ){
 			update_option($this->option_name,$_POST['o']);	
@@ -184,11 +175,6 @@ abstract class  arvlbAdminViewSimple  extends arvlbAdminView{
 		}
 	}
 
-	/**
-	 * Make sure the option page is setup nice and neat
-	 * @param string $option_name the name of the option page
-	 * @param string $default an array of default option to be used when no database entry is present
-	 */
 	function __construct($option_name='',$default=array()){
 		$this->option_name 	= $option_name;
 		$this->err 		 	= new arvlbErrorClass();
@@ -214,7 +200,8 @@ abstract class  arvlbAdminViewDB extends arvlbAdminView{
 	private $process 	= true;
 
 	public function save(){
-		if (isset($_POST['o']) && (!$this->err->has_error())  && (wp_verify_nonce($_POST['arvlb-update-forms'])!==false)){
+		if (isset($_POST['o']) && (!$this->err->has_error())  
+			&& (wp_verify_nonce($_POST['arvlb-update-forms'])!==false)){
 			$save = $this->is_edit() ? $this->process_edit : $this->process_save;
 			$this->state = 2;
 		}

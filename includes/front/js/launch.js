@@ -1,36 +1,106 @@
-jQuery(document).ready(function(){
-/** lb_l_ret */
+var arvlblarvaunched=false;
+var arvlbuserstatus = 0;
 
-/* pre-construct code! */
-jQuery('body').append(construct_code());
+window.fbAsyncInit = function(){arvlbarevicotest();};
 
-	if (lb_l_ret.show_once>0 && arvreadCookie("arevico_lb")==1)
-	{
+function arvlbarevicotest(){
 
+if (arvlblarvaunched==true)
+	return;
+	
+	arvlblarvaunched=true;
+			arvlbarinitcode();
+    
+	}
+
+
+function arvlbpreprep(){
+  	window.setTimeout(arvlbshow_facebox, lb_l_ret.delay);
+}
+
+
+function arvlbinitFB(){
+	if ((typeof(FB)!= 'undefined')) {
+
+    FB.init({
+      xfbml: true,    
+	  status : true, // check login status
+      cookie : true // enable cookies to allow the server to access the session
+    });
+	
+	}
+}
+
+function arvlbarinitcode() {
+//	if (arvlblarvaunched==true)
+//		return;
+
+	arvlbinitFB();
+
+	if (!arvlbcheck_for_launch())
+		return false;
+
+	arvlbpreprep();
+}
+
+
+function arvlbcheck_for_launch(){
+	if (
+		( (lb_l_ret.show_once>0) && arvlbreadCookie('arevico_lb')==1) 
+		){
+		// Cookies set, don't show
+		larvaunched = true;
+
+		return false;
 	} else {
 
-		window.setTimeout(show_facebox, lb_l_ret.delay)
+
 	}
+
+	return true;
+}
+
+
+jQuery(document).ready(function() {
+    jQuery('body').append('<div id="fb-root"></div>');
+
+    var fb_locale = '';
+    if (lb_l_ret.fblocale == '') {
+        fb_locale = 'en_US';
+    } else {
+        fb_locale = lb_l_ret.fblocale
+    }
+
+    jQuery.getScript('//connect.facebook.net/' + fb_locale + '/all.js#xfbml=1&appId=' +
+        lb_l_ret.appid + "&status=1&cookie=1&version=v2.3",
+        function(script, textStatus, jqXHR) {
+            window.setTimeout(arvlbarevicotest, 200);
+        });
 
 });
 
-function show_facebox(){
-	if (lb_l_ret.show_once>0){
-		arvcreateCookie("arevico_lb", "1", lb_l_ret.show_once);
+
+function arvlbshow_facebox(){
+	larvaunched =true;
+  	if (lb_l_ret.show_once>0){
+		arvlbcreateCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}
+
+//jQuery('iframe').css('overflow:hidden;');
 $jarevico('a#inline').arevicofancy({
-	'modal': false,
-	'padding' : 0,
-	'autoDimensions':false,
-	'width' : '400',
-	'height': 'auto',
+	'modal'            : false,
+	'padding'            : 0,
 	'scrolling'          : 'no',
-	'centerOnScroll' : true,
+	'showCloseButton'    : true,
+	'autoDimensions'     : false,
+	'width' : '400',
+	'height'             : 'auto',
+	'centerOnScroll'     : true,
 	'hideOnOverlayClick' : (lb_l_ret.coc == 1)
 	}).trigger('click');
 }
 
-function arvcreateCookie(name,value,days) {
+function arvlbcreateCookie(name,value,days) {
 	if (days) {
 		var date = new Date();
 		date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -40,7 +110,7 @@ function arvcreateCookie(name,value,days) {
 	document.cookie = name+"="+value+expires+"; path=/";
 }
 
-function arvreadCookie(name) {
+function arvlbreadCookie(name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -51,14 +121,13 @@ function arvreadCookie(name) {
 	return null;
 }
 
-/**
- *
- * @access public
- * @return void
- **/
-function construct_code(){
-fbl_otp='<a id="inline" href="#arvlbdata" style="display: none;">Show</a><div style="display:none"><div id="arvlbdata" style="overflow:hidden;' + '' + '">';
-fbl_otp += '<iframe src="//www.facebook.com/plugins/likebox.php?id=' + lb_l_ret.fb_id +'&amp;width=' + '400' + '&amp;height=' + '255' +'&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:' + '400' + 'px; height:' + '255' + 'px;" allowTransparency="true"></iframe>';
-fbl_otp +='</div></div>';
-return fbl_otp;
+
+function arvlbisEmpty(obj) {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            return false;
+    }
+ 
+    return true;
 }
+

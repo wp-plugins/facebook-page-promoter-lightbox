@@ -88,9 +88,6 @@ class arvlbAdmin
 		$this->admin_view->render_page();
 	}
 
-	/**
-	 * Add all the menus associated with the main plugin
-	 */
 	public function add_menus(){
 		$o = get_option('arv_fb24_opt');
 
@@ -102,7 +99,6 @@ class arvlbAdmin
 	}
 	/**
 	* Add an link to the options page in the plugin overview
-	* @param string $links  an array of links associated with the current plugin
 	*/
 	public function add_settings_link($links) { 
   		$settings_link = '<a href="options-general.php?page=arvlb-tld">Settings</a>'; 

@@ -1,9 +1,9 @@
 <?php 
 /*
    Plugin Name: Facebook Page Promoter Lightbox
-   Plugin URI: http://http://wordpress.org/plugins/facebook-page-promoter-lightbox/faq/ 
-   Description: All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
-   Version: 3.0
+   Plugin URI:  http://http://wordpress.org/plugins/facebook-page-promoter-lightbox/faq/ 
+   Description:  All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
+   Version: 3.1
    Author: Arevico
    Author URI: http://arevico.com/sp-facebook-lightbox-premium/
    Copyright: 2013, Arevico
@@ -17,12 +17,10 @@ if (is_admin() ){
 	require(dirname(__FILE__) .'/admin.php');
 	$arvlbAdmin 		= new arvlbAdmin();
 } else {
-  $arvlbGASuite = new arvlbFPPL();
+  $arvlbFPPL = new arvlbFPPL();
 }
 
-/**
- * Main plugin class. 
- */
+
 class arvlbFPPL 
 {
     private $options = null;
@@ -32,8 +30,56 @@ class arvlbFPPL
      */
     function __construct(){
       $this->options = get_option('arv_fb24_opt',arvlbSHARED::getDefaults() );
-      add_action('wp_enqueue_scripts', array($this,'addScript'));
+      
+      add_action('init'               , array($this,'init'));
+      add_action('wp_enqueue_scripts' , array($this, 'addScript'));
+      add_action('wp_footer'          , array($this, 'add_footer'));
+    }
 
+    /**
+     * Initilize all front-end hooks
+     */
+    function init(){
+
+    }
+
+    public function add_footer(){
+      $o = $this->options;
+      ?>
+<a id="inline" href="#arvlbdata" style="display: none;overflow:hidden;">Show</a>
+
+<div style="display:none">
+  <div id="arvlbdata" style="overflow:visible;width:400px;height:250px;">
+  <?php if (!empty($o['mab'])) {
+    echo $o['mab'];
+  } ?>
+    <div allowtransparency="true" style="overflow:hidden;width:400px;height:250px;" class="fb-page" 
+      data-href="<?php 
+      if (!empty($o['fb_id']) && is_numeric($o['fb_id'])){
+        echo 'https://facebook.com/' . htmlentities($o['fb_id']);
+      }else{
+        if (!empty($o['fb_id']))
+          echo htmlentities($o['fb_id']);
+      } 
+      ?>"
+      data-width="400" 
+      data-height="250" 
+
+      data-small-header="false" 
+      data-adapt-container-width="false" 
+      data-hide-cover="true" 
+      data-show-facepile="true" 
+      data-show-posts="false">
+    </div>
+
+<?php if (!empty($o['eam']) && (!empty($o['connect']))){ ?>
+<div style="padding-bottom:3px;padding-right:3px;text-align:right;display:block;">
+  <a href="#" onclick="arvlbfbloginner();" style="text-decoration:none;"><?php if (isset($o['cmessage'])) echo $o['cmessage']; ?> </a>
+</div>
+<?php } ?>
+</div>
+</div>
+      <?php
     }
 
     /**
@@ -49,7 +95,7 @@ class arvlbFPPL
         ){
 
     
-
+   
     wp_register_style('arevico_scsfbcss', plugins_url( 'includes/front/scs/scs.css',__FILE__));
     wp_enqueue_style( 'arevico_scsfbcss'); 
 
@@ -65,7 +111,7 @@ class arvlbFPPL
   }
 
   
- } // end of main plugin class
+ }
 
 
     /**
@@ -96,30 +142,29 @@ class arvlbSHARED{
   'fb_id'         => '',
   'delay'         => '2000',
   'show_once'       => '0',
-  'display_on_homepage'   => '1',
+  'display_on_homepage'   => '0',
   'coc'         => '0',
   'cooc'          => '1'  );
 
 
   /**
-   * Normalize settings to prevent undefined errors on the front-end
+   *
    */
   public static function normalize($o){
     $checks = array(
-      'width'		=> '400',
-      'height'		=> '255',
-      'delay'		=> '0',
-      'coc'         => '0',
-      'fb_id'		=> '' ,
-      'cooc'        => '0'
+      'width'		   => '400',
+      'height'		  => '255',
+      'delay'		   => '0',
+      'coc'        => '0',
+      'fb_id'		   => '' ,
+      'cooc'       => '0'
     );
 
-    
+    		
 
     return array_merge($checks,$o);
   }
 
-  
   public static function getDefaults(){
     $o = self::$defaults;
     if (empty($o['install_date']))
