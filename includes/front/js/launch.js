@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
     }
 
     jQuery.getScript('//connect.facebook.net/' + fb_locale + '/all.js#xfbml=1&appId=' +
-        lb_l_ret.appid + "&status=1&cookie=1&version=v2.3",
+        lb_l_ret.appid + "&status=1&cookie=1",
         function(script, textStatus, jqXHR) {
             window.setTimeout(arvlbarevicotest, 200);
         });
