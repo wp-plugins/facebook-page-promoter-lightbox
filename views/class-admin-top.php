@@ -28,8 +28,8 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 	<div class="updated">
 	<div style="float:left;">
 	<?php 
-	if (  (!empty($o['o'])) && (!empty($o['o']['install_date'])) && (time()-$o['o']['install_date'] > 60 * 60 * 24 * 7)){?>
-		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox" target="_blank">Love it? Rate us 5 stars.</a>.
+	if (  (!empty($o['o'])) && (!empty($o['o']['install_date'])) && (time()-$o['o']['install_date'] > 60 * 60 * 24 * 5)){?>
+		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox?filter=5" target="_blank">Love it? Rate us 5 stars.</a>.
 		
 		<?php }else{ ?>
 		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q.</a> for questions.
