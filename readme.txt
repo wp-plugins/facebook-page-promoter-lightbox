@@ -3,7 +3,7 @@ Contributors: Arevico
 Tags: facebook,post,plugin,lightbox,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 3.1
+Stable tag: 3.2
 
 All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
@@ -38,7 +38,6 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 Navigate to the "Arevico Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
 == Frequently Asked Questions ==
-
 
 **Q. The lightbox appears even tough I already like it. How do I fix this?**
 
@@ -133,10 +132,6 @@ a. This is caused by facebook (not the plugin) to protect users from like someth
 
 == Changelog ==
 
-= Version 3.1 =
-Updated the plugin for Facebook API v2.3
-
-
 = Version 2.6.6 =
 Introduced:
 * New admin UI
@@ -145,6 +140,9 @@ Introduced:
 Bugs fixed:
 * Display on homepage, custom post-types
 * Width and scaling issues
+
+= Version 3.1 =
+Updated the plugin for Facebook API v2.3
 
 = Version 2.6.4 =
 Reversed assumptions made about dehooking, jQuery scope, refined anti conflict methods (fancybox scope, css specific prefixes etc).

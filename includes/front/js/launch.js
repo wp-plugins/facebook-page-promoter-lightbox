@@ -1,17 +1,10 @@
 var arvlblarvaunched=false;
-var arvlbuserstatus = 0;
 
 window.fbAsyncInit = function(){arvlbarevicotest();};
 
 function arvlbarevicotest(){
-
-if (arvlblarvaunched==true)
-	return;
-	
-	arvlblarvaunched=true;
-			arvlbarinitcode();
-    
-	}
+ arvlbarinitcode();  
+}
 
 
 function arvlbpreprep(){
@@ -21,7 +14,7 @@ function arvlbpreprep(){
 
 function arvlbinitFB(){
 	if ((typeof(FB)!= 'undefined')) {
-
+	
     FB.init({
       xfbml: true,    
 	  status : true, // check login status
@@ -29,11 +22,10 @@ function arvlbinitFB(){
     });
 	
 	}
+
 }
 
 function arvlbarinitcode() {
-//	if (arvlblarvaunched==true)
-//		return;
 
 	arvlbinitFB();
 
@@ -49,7 +41,7 @@ function arvlbcheck_for_launch(){
 		( (lb_l_ret.show_once>0) && arvlbreadCookie('arevico_lb')==1) 
 		){
 		// Cookies set, don't show
-		larvaunched = true;
+		arvlblarvaunched = true;
 
 		return false;
 	} else {
@@ -81,7 +73,11 @@ jQuery(document).ready(function() {
 
 
 function arvlbshow_facebox(){
-	larvaunched =true;
+	if (arvlblarvaunched==true)
+		return;
+
+	arvlblarvaunched =true;
+
   	if (lb_l_ret.show_once>0){
 		arvlbcreateCookie("arevico_lb", "1", lb_l_ret.show_once);
 	}

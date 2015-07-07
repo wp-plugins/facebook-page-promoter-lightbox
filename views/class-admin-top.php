@@ -28,8 +28,8 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 	<div class="updated">
 	<div style="float:left;">
 	<?php 
-	if (  (!empty($o['o'])) && (!empty($o['o']['install_date'])) && (time()-$o['o']['install_date'] > 60 * 60 * 24 * 5)){?>
-		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox?filter=5" target="_blank">Love it? Rate us 5 stars.</a>.
+	if (  (!empty($o['o'])) && (!empty($o['o']['install_date'])) && (time()-$o['o']['install_date'] > 60 * 60 * 24 * 7)){?>
+		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; <a href="https://wordpress.org/support/view/plugin-reviews/facebook-page-promoter-lightbox" target="_blank">Love it? Rate us 5 stars.</a>.
 		
 		<?php }else{ ?>
 		Take a look at the <a href="http://arevico.com/sp-facebook-lightbox-premium/" target="_blank" style="text-decoration:underline;">Premium Version</a> for more options!&nbsp;&nbsp; Read the <a href="http://arevico.com/facebook-lightbox-plugin-f-a-q/" target="_blank">F.A.Q.</a> for questions.
@@ -43,7 +43,7 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 
 <?php
  if ($this->getState()) { ?>
-	<div class="updated"> Saved Successfully !</div>
+	<div class="updated"> Saved Successfully ! </div>
 <?php } ?>
 <form method="POST">
 <?php  wp_nonce_field(-1,'arvlb-update-forms');
@@ -94,7 +94,6 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 		<div class="col3 last">&nbsp;</div>
 
 		<div class="col12 last">&nbsp;</div>
-		<div class="col12 last">&nbsp;</div>
 
 
     	<div class="col3 formlabel">
@@ -117,7 +116,10 @@ class arvlbAdminTop extends arvlbAdminViewSimple{
 		<div class="col9 formselect last"><?php $this->getCheckbox('o[submenu]'); ?> Show this menu under 'Settings'</div>
 
 		<div class="col12 last">&nbsp;</div>
-    
+    			<div class="col3 formlabel">Performance Mode</div>
+   			<div class="col9 formselect last"><?php $this->getCheckbox('o[performance]'); ?> Only enable if this is the only Facebook app or all facebook plugins are using the same App ID.</div>
+   			<div class="col12 last">&nbsp;</div>	
+
 	</div>
 	</div>
 	<!-- /general-->

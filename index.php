@@ -3,7 +3,7 @@
    Plugin Name: Facebook Page Promoter Lightbox
    Plugin URI:  http://http://wordpress.org/plugins/facebook-page-promoter-lightbox/faq/ 
    Description:  All your visitors should know about your facebook page and tell their friends. With this plugin you can display a preconfigured Facebook Page-Like Box inside a lightbox.
-   Version: 3.1
+   Version: 3.2
    Author: Arevico
    Author URI: http://arevico.com/sp-facebook-lightbox-premium/
    Copyright: 2013, Arevico
@@ -31,9 +31,9 @@ class arvlbFPPL
     function __construct(){
       $this->options = get_option('arv_fb24_opt',arvlbSHARED::getDefaults() );
       
+
       add_action('init'               , array($this,'init'));
       add_action('wp_enqueue_scripts' , array($this, 'addScript'));
-      add_action('wp_footer'          , array($this, 'add_footer'));
     }
 
     /**
@@ -45,6 +45,7 @@ class arvlbFPPL
 
     public function add_footer(){
       $o = $this->options;
+      
       ?>
 <a id="inline" href="#arvlbdata" style="display: none;overflow:hidden;">Show</a>
 
@@ -88,13 +89,20 @@ class arvlbFPPL
     public function addScript(){
       $o  = $this->options;
 
-    if ((is_front_page()  && !empty($o['display_on_homepage']) )
+    if (
+       (is_front_page()  && !empty($o['display_on_homepage']) )
       || (is_archive()  && !empty($o['display_on_archive']))
       || (is_single()   && !empty($o['display_on_post']))
       || (is_page()     && !empty($o['display_on_page']))
+      || (!empty($_GET['lightbox']))
         ){
 
+       add_action('wp_footer'          , array($this, 'add_footer'));
+
     
+ if (empty($o['performance']))
+      add_action('wp_head', array($this,"scompat_head"),-999);//lower order corresponds with earlier execution
+
    
     wp_register_style('arevico_scsfbcss', plugins_url( 'includes/front/scs/scs.css',__FILE__));
     wp_enqueue_style( 'arevico_scsfbcss'); 
@@ -110,7 +118,15 @@ class arvlbFPPL
     }
   }
 
-  
+  /* Compatibility mode */
+  public function scompat_head(){
+    $o = $this->options;
+    
+   
+    echo("<script src='//connect.facebook.net/en_EN/all.js#xfbml=1'></script>");
+   /* /FREE*/
+  }
+
  }
 
 
